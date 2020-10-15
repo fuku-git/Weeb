@@ -101,6 +101,59 @@
             </div>
         </div>
     </section>
+    {{-- 修正箇所 --}}
+    <section id="portfolio" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">さぁ、つながろう</h2>
+                    <h3 class="section-subheading text-muted">〜最高の出会いを〜</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="{{ asset('/assets/images/バックエンド.jpg') }}" alt="フロントエンド"></a>
+                    <div class="portfolio-caption">
+                        <h4>フロントエンド</h4>
+                        <p class="text-muted">Vue.js CSS Sass</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="{{ asset('/assets/images/バックエンド2.jpg') }}" alt="バックエンドエンジニア"></a>
+                    <div class="portfolio-caption">
+                        <h4>バックエンド</h4>
+                        <p class="text-muted">PHP Ruby laravel</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="{{ asset('/assets/images/フロント女性.jpg') }}" alt="デザイナー"></a>
+                    <div class="portfolio-caption">
+                        <h4>デザイナー</h4>
+                        <p class="text-muted">dezain</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-6 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="{{ asset('/assets/images/インフラ.jpg') }}" alt="インフラエンジニア"></a>
+                    <div class="portfolio-caption">
+                        <h4>インフラ</h4>
+                        <p class="text-muted">AWS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="contact" style="background-image:url('assets/img/map-image.png');">
         <div class="container">
             <div class="row">
