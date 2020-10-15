@@ -101,6 +101,7 @@
             </div>
         </div>
     </section>
+    {{-- 修正箇所 --}}
     <section id="portfolio" class="bg-light">
         <div class="container">
             <div class="row">
