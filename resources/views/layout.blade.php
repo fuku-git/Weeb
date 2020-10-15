@@ -123,7 +123,7 @@
                     <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="{{ asset('/assets/images/インフラ.jpg') }}" alt="インフラエンジニア"></a>
+                        </div><img class="img-fluid"></a>
                     <div class="portfolio-caption">
                         <h4>インフラ</h4>
                         <p class="text-muted">AWS</p>
