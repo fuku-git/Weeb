@@ -8,6 +8,6 @@ class PostsController extends Controller
 {
     public function index()
     {
-        return view('serch');
+        return view('index');
     }
 }
