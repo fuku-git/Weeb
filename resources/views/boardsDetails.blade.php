@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-​
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
-​
+
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container"><a class="navbar-brand" href="#page-top">Weeeeeeeeeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
@@ -46,35 +46,60 @@
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
             <div class="intro-text">
-                <h3 class="intro-lead-in p-3 mt-300 bg-warning"><span style="color: rgb(14,14,14);">ログイン</span></h3>
-                <div class="card">
-                    <div class="card-body">
+                <div class="intro-lead-in"><span style="color: rgb(14,14,14);">スレッド詳細</span></div>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <legend>Field Group</legend>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"><span>Text</span>
+                        <legend style="color: rgb(11,11,11);text-align: center;background: rgb(254,209,54);">タイトル：サーバーサイドについて一緒に学びましょう！</legend>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <fieldset></fieldset>
+                        <fieldset>
+                            <div class="row">
+                                <div class="col offset-lg-1" style="display:flex;">
+                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
+                                        <div class="thread" style="color: rgb(0,0,0)";>
+                                            <dr>
+                                                <dd>ユーザー：<?php // ?></dd>
+                                                <dd>タイトル：<?php // ?></dd>
+                                                <dd>内容：<?php // ?></dd>
+                                            </dr>
+                                        </div>
+                                    </P>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <fieldset></fieldset>
+                <fieldset>
                     <div class="row">
                         <div class="col">
                             <fieldset>
-                                <legend>Field Group</legend>
+                                <legend style="color: rgb(11,11,11);text-align: center;background: rgb(254,209,54);">返信</legend>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <fieldset></fieldset><span style="color: rgb(14,13,13);"></span><span class="text-center" style="color: rgb(14,14,14);text-align: justify;">投稿内容<span style="color: rgb(14,14,14);"></span></span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <fieldset></fieldset><textarea style="width: 600px;height: 300px;"></textarea></div>
+                                </div>
                             </fieldset>
                         </div>
+                        <legend class="text-left"></legend>
+                        <legend class="text-left"></legend>
+                        <legend class="text-left">Field Group</legend>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-12 offset-xl-0">
-                            <legend class="text-center"><span class="text-center" style="color: rgb(14,14,14);">ログインID<span style="color: rgb(14,14,14);"></span></span><input type="text"></legend>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <fieldset>
-                                <legend>Field Group</legend>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <legend class="text-center"><span class="text-center" style="color: rgb(14,14,14);">パスワード<span style="color: rgb(14,14,14);"></span></span><input type="password"></legend>
-                    </div>
-                    <fieldset>
-                        <legend>Field Group</legend>
-                    </fieldset><a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">ログイン</a></div>
-            </div>
+                </fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: left;">投稿</a></div>
+        </div>
     </header>
     <footer>
         <div class="container">
@@ -247,6 +272,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
-​
-</html>
 
+</html>
