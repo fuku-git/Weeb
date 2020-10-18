@@ -46,70 +46,100 @@
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in"><span style="color:rgb(14,14,14);font size=12"><big><b>検索してみて下さい</big></b></span></div>
+                <div class="intro-lead-in"><span style="color: rgb(14,14,14);">掲示板投稿</span></div>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col">
+                                    <legend class="text-left" style="color: rgb(14,13,13);background: rgb(254,209,54);text-align: left;"></legend>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <legend class="text-center" style="color: rgb(14,13,13);background: rgb(254,209,54);text-align: center;">最近の投稿
+                                <div class="btn-group"><button class="btn btn-primary" type="button" style="background: rgb(249,249,247);color: rgb(23,22,22);">並び替え </button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
+                                        type="button" style="background: rgb(254,253,251);color: rgb(13,12,12);"></button>
+                                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                </div>
+                            </legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="row">
+                                <div class="col offset-lg-1" style="display:flex;">
+                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
+                                        <div class="thread" style="color: rgb(0,0,0)";>
+                                            <dr>
+                                                <dd>ユーザー：<?php // ?></dd>
+                                                <dd>タイトル：<?php // ?></dd>
+                                                <dd>内容：<?php // ?></dd>
+                                            </dr>
+                                        </div>
+                                    </P>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col offset-lg-1" style="display:flex;">
+                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
+                                        <div class="thread" style="color: rgb(0,0,0)";>
+                                            <dr>
+                                                <dd>ユーザー：<?php // ?></dd>
+                                                <dd>タイトル：<?php // ?></dd>
+                                                <dd>内容：<?php // ?></dd>
+                                            </dr>
+                                        </div>
+                                    </P>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col offset-lg-1" style="display:flex;">
+                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
+                                        <div class="thread" style="color: rgb(0,0,0)";>
+                                            <dr>
+                                                <dd>ユーザー：<?php // ?></dd>
+                                                <dd>タイトル：<?php // ?></dd>
+                                                <dd>内容：<?php // ?></dd>
+                                            </dr>
+                                        </div>
+                                    </P>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <fieldset></fieldset>
+                <fieldset>
+                    <legend class="text-center" style="color: rgb(11,11,11);text-align: left;background: rgb(254,209,54);">新規投稿</legend>
+                    <div class="row text-center">
+                        <div class="col">
+                            <fieldset>
+                                <legend>Field Group</legend>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3"><span class="text-center" style="color: rgb(14,14,14);">タイトル</span></div>
+                        <div class="col"><input type="text" maxlength="100" placeholder="タイトルを書いてください" style="width: 600px;height: 45px;"></div>
+                    </div>
+                </fieldset>
                 <div class="row">
                     <div class="col">
                         <fieldset>
                             <legend>Field Group</legend>
+                            <div class="row">
+                                <div class="col-lg-3"><span class="text-center" style="color: rgb(14,14,14);">投稿内容</></span></div>
+                                <div class="col"><textarea maxlength="1000" placeholder="投稿内容を書いてください" style="height: 300px;width: 600px;"></textarea></div>
+                            </div>
                         </fieldset>
                     </div>
                 </div>
-                <div class="row">
-
-                        <legend class="text-center">Fiel<span class="text-center" style="color: rgb(14,14,14);">職業<span style="color: rgb(14,14,14);"></span></span>d Gr<input type="search">oup</legend>
-
-                </div>
-
-                        <fieldset>
-                            <legend>Field Group</legend>
-                        </fieldset>
-
-                <div class="row">
-                    <legend class="text-center">Fiel<span class="text-center" style="color: rgb(14,14,14);">名前<span style="color: rgb(14,14,14);"></span></span>d Gr<input type="search">oup</legend>
-                </div>
-
                 <fieldset>
                     <legend>Field Group</legend>
-                </fieldset>
-
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">検索🔍</a>
-                <fieldset>
-                    <legend>Fiel</legend>
-                    <div class="row">
-                        <div class="col">
-                            <fieldset>
-                                <legend style="color: rgb(10,9,9);">〜このような出会いがあります〜</legend>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </fieldset>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">パートナーを見つける</h3>
-                        <p style="color:#000000;text-align:left;">喜びを分かち合える相棒探し!!</p>
-                        <br>
-                        <picture><img src="assets/images/1.jpg"></picture>
-                        <br><br><br>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">一緒に勉強したい</h3>
-                        <p style="color:#000000;text-align:left;">仲間を探して挫折を防ごう!!</p>
-                        <br>
-                        <picture><img src="assets/images/2.jpg"></picture>
-                        <br><br><br>
-                    </div>
-                    <br>
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">話を聞きたい</h3>
-                        <p style="color:#000000;text-align:left;">憧れの人・メンターを見つけよう!!</p>
-                        <br>
-                        <picture><img src="assets/images/3.jpg"></picture>
-                    </div>
-                </div>
-            </div>
+                </fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: left;">投稿</a></div>
         </div>
     </header>
     <footer>
