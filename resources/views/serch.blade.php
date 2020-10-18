@@ -97,7 +97,7 @@
                     </div>
                     <br>
                     <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);widh: 300px;">相談できる</h3>
+                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">相談できる</h3>
                         <p style="color:#000000;text-align:left;">憧れの人・メンターを見つけよう!!</p>
                         <br>
                         <picture><img src="assets/images/3.jpg"></picture>
