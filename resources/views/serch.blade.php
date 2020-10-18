@@ -64,13 +64,7 @@
                             <legend>Field Group</legend>
                         </fieldset>
 
-                <div class="row">
-                    <legend class="text-center">Fiel<span class="text-center" style="color: rgb(14,14,14);">名前<span style="color: rgb(14,14,14);"></span></span>d Gr<input type="search">oup</legend>
-                </div>
 
-                <fieldset>
-                    <legend>Field Group</legend>
-                </fieldset>
 
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">検索🔍</a>
                 <fieldset>
@@ -87,7 +81,7 @@
                 </fieldset>
                 <div class="row">
                     <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">パートナーを見つける</h3>
+                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">パートナーが見つかる</h3>
                         <p style="color:#000000;text-align:left;">喜びを分かち合える相棒探し!!</p>
                         <br>
                         <picture><img src="assets/images/1.jpg"></picture>
@@ -95,7 +89,7 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">一緒に勉強したい</h3>
+                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">一緒に勉強できる</h3>
                         <p style="color:#000000;text-align:left;">仲間を探して挫折を防ごう!!</p>
                         <br>
                         <picture><img src="assets/images/2.jpg"></picture>
@@ -103,7 +97,7 @@
                     </div>
                     <br>
                     <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">話を聞きたい</h3>
+                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">相談できる</h3>
                         <p style="color:#000000;text-align:left;">憧れの人・メンターを見つけよう!!</p>
                         <br>
                         <picture><img src="assets/images/3.jpg"></picture>
