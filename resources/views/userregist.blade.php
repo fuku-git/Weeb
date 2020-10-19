@@ -117,7 +117,9 @@
                         <fieldset>
                             <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">ポジション<span style="color: rgb(14,14,14);"></span></span>
                             </div>
-                            <a class="btn PL" role="button" href="" style="color: rgb(18,18,18);">Project Leader</a>
+                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Project Leader</a>
+                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Project Manager</a>
+                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Coder</a>
                         </fieldset>
                         <legend class="text-center"></legend>
                     </div>
@@ -133,6 +135,13 @@
                             <fieldset>
                                 <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">スキル<span style="color: rgb(14,14,14);"></span></span>
                                 </div>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Java</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">PHP</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Ruby</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Vue.js</a><br>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Node.js</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">React</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Python</a>
                             </fieldset>
                             <legend class="text-center"></legend>
                         </div>
