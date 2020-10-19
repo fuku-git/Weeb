@@ -11,6 +11,6 @@ class PostsController extends Controller
     {
         $posts = Post::orderBy('created_at','desc')->get();
         
-        return view('posts.result',['posts' => $posts]);
+        return view('serch',['posts' => $posts]);
     }
 }
