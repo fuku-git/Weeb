@@ -20,7 +20,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
         crossorigin="anonymous"
     > 
-
+    
 </head>
 
 <body id="page-top">
@@ -42,7 +42,7 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background:
+    <header class="masthead" style="background-image:
             url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);">
         <div class="container">
             <div class="intro-text">
@@ -123,7 +123,7 @@
                     <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="{{ asset('/assets/images/インフラ.jpg') }}" alt="インフラエンジニア"></a>
+                        </div><img class="img-fluid"></a>
                     <div class="portfolio-caption">
                         <h4>インフラ</h4>
                         <p class="text-muted">AWS</p>
