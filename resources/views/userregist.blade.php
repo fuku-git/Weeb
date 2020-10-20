@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-​
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
-​
+
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container"><a class="navbar-brand" href="#page-top">Weeeeeeeeeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
@@ -46,35 +46,115 @@
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
             <div class="intro-text">
-                <h3 class="intro-lead-in p-3 mt-300 bg-warning"><span style="color: rgb(14,14,14);">ログイン</span></h3>
-                <div class="card">
-                    <div class="card-body">
+                <div class="intro-lead-in"><span style="color: rgb(14,14,14);">新規メンバー登録</span></div>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">ユーザーID<span style="color: rgb(14,14,14);"></span></span>
+                                </div>
+                                <div class="col-xl-8"><input type="text" style="width: 700px;"></div>
+                            </div>
+                            <legend>Field Group</legend>
+                        </fieldset>
+                    </div>
+                    <div class="col">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">ニックネーム<span style="color: rgb(14,14,14);"></span></span>
+                                </div>
+                                <div class="col-xl-8"><input type="text" style="width: 700px;"></div>
+                            </div>
+                            <legend>Field Group</legend>
+                        </fieldset>
+                    </div>
+                    <div class="col">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">メールアドレス<span style="color: rgb(14,14,14);"></span></span>
+                                </div>
+                                <div class="col-xl-8"><input type="email" style="width: 700px;"></div>
+                            </div>
+                            <legend>Field Group</legend>
+                        </fieldset>
+                    </div>
+                    <div class="col">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">メールアドレス（確認用）<span style="color: rgb(14,14,14);"></span></span>
+                                </div>
+                                <div class="col-xl-8"><input type="email" style="width: 700px;"></div>
+                            </div>
+                            <legend>Field Group</legend>
+                        </fieldset>
+                    </div>
+                    <div class="col">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">パスワード<span style="color: rgb(14,14,14);"></span></span>
+                                </div>
+                                <div class="col-xl-8"><input type="password" style="width: 700px;"></div>
+                            </div>
+                            <legend>Field Group</legend>
+                        </fieldset>
+                    </div>
+                    <div class="col">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">パスワード（確認用）<span style="color: rgb(14,14,14);"></span></span>
+                                </div>
+                                <div class="col-xl-8"><input type="password" style="width: 700px;"></div>
+                            </div>
+                            <legend>Field Group</legend>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <legend>Field Group</legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">ポジション<span style="color: rgb(14,14,14);"></span></span>
+                            </div>
+                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Project Leader</a>
+                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Project Manager</a>
+                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Coder</a>
+                        </fieldset>
+                        <legend class="text-center"></legend>
+                    </div>
+                </div>
+                <fieldset></fieldset>
+                <fieldset>
+                    <legend>Field Group</legend>
                     <div class="row">
                         <div class="col">
                             <fieldset>
                                 <legend>Field Group</legend>
                             </fieldset>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-12 offset-xl-0">
-                            <legend class="text-center"><span class="text-center" style="color: rgb(14,14,14);">ログインID<span style="color: rgb(14,14,14);"></span></span><input type="text"></legend>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
                             <fieldset>
-                                <legend>Field Group</legend>
+                                <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">スキル<span style="color: rgb(14,14,14);"></span></span>
+                                </div>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Java</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">PHP</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Ruby</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Vue.js</a><br>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Node.js</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">React</a>
+                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Python</a>
                             </fieldset>
+                            <legend class="text-center"></legend>
                         </div>
                     </div>
-                    <div class="row">
-                        <legend class="text-center"><span class="text-center" style="color: rgb(14,14,14);">パスワード<span style="color: rgb(14,14,14);"></span></span><input type="password"></legend>
+                    <legend>Field Group</legend>
+                </fieldset>
+                <fieldset>
+                    <div class="col-xl-12 offset-lg-0 offset-xl-1">
+                        <legend class="text-center" style="color: rgb(21,19,19);"></legend>
                     </div>
-                    <fieldset>
-                        <legend>Field Group</legend>
-                    </fieldset><a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">ログイン</a></div>
-            </div>
+                </fieldset>
+                <fieldset></fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">登録</a></div>
+        </div>
     </header>
     <footer>
         <div class="container">
@@ -247,6 +327,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
-​
-</html>
 
+</html>

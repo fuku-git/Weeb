@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-​
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
-​
+
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container"><a class="navbar-brand" href="#page-top">Weeeeeeeeeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
@@ -46,10 +46,75 @@
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
             <div class="intro-text">
-                <h3 class="intro-lead-in p-3 mt-300 bg-warning"><span style="color: rgb(14,14,14);">ログイン</span></h3>
-                <div class="card">
-                    <div class="card-body">
-                    <div class="row">
+                <div class="intro-lead-in"><span style="color: rgb(14,14,14);">掲示板投稿</span></div>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <div class="row">
+                                <div class="col">
+                                    <legend class="text-left" style="color: rgb(14,13,13);background: rgb(254,209,54);text-align: left;"></legend>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <legend class="text-center" style="color: rgb(14,13,13);background: rgb(254,209,54);text-align: center;">最近の投稿
+                                <div class="btn-group"><button class="btn btn-primary" type="button" style="background: rgb(249,249,247);color: rgb(23,22,22);">並び替え </button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
+                                        type="button" style="background: rgb(254,253,251);color: rgb(13,12,12);"></button>
+                                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                                </div>
+                            </legend>
+                        </fieldset>
+                        <fieldset>
+                            <div class="row">
+                                <div class="col offset-lg-1" style="display:flex;">
+                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
+                                        <div class="thread" style="color: rgb(0,0,0)";>
+                                            <dr>
+                                                <dd>ユーザー：<?php // ?></dd>
+                                                <dd>タイトル：<?php // ?></dd>
+                                                <dd>内容：<?php // ?></dd>
+                                            </dr>
+                                        </div>
+                                    </P>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col offset-lg-1" style="display:flex;">
+                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
+                                        <div class="thread" style="color: rgb(0,0,0)";>
+                                            <dr>
+                                                <dd>ユーザー：<?php // ?></dd>
+                                                <dd>タイトル：<?php // ?></dd>
+                                                <dd>内容：<?php // ?></dd>
+                                            </dr>
+                                        </div>
+                                    </P>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col offset-lg-1" style="display:flex;">
+                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
+                                        <div class="thread" style="color: rgb(0,0,0)";>
+                                            <dr>
+                                                <dd>ユーザー：<?php // ?></dd>
+                                                <dd>タイトル：<?php // ?></dd>
+                                                <dd>内容：<?php // ?></dd>
+                                            </dr>
+                                        </div>
+                                    </P>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <fieldset></fieldset>
+                <fieldset>
+                    <legend class="text-center" style="color: rgb(11,11,11);text-align: left;background: rgb(254,209,54);">新規投稿</legend>
+                    <div class="row text-center">
                         <div class="col">
                             <fieldset>
                                 <legend>Field Group</legend>
@@ -57,24 +122,25 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12 offset-xl-0">
-                            <legend class="text-center"><span class="text-center" style="color: rgb(14,14,14);">ログインID<span style="color: rgb(14,14,14);"></span></span><input type="text"></legend>
-                        </div>
+                        <div class="col-lg-3"><span class="text-center" style="color: rgb(14,14,14);">タイトル</span></div>
+                        <div class="col"><input type="text" maxlength="100" placeholder="タイトルを書いてください" style="width: 600px;height: 45px;"></div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <fieldset>
-                                <legend>Field Group</legend>
-                            </fieldset>
-                        </div>
+                </fieldset>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <legend>Field Group</legend>
+                            <div class="row">
+                                <div class="col-lg-3"><span class="text-center" style="color: rgb(14,14,14);">投稿内容</></span></div>
+                                <div class="col"><textarea maxlength="1000" placeholder="投稿内容を書いてください" style="height: 300px;width: 600px;"></textarea></div>
+                            </div>
+                        </fieldset>
                     </div>
-                    <div class="row">
-                        <legend class="text-center"><span class="text-center" style="color: rgb(14,14,14);">パスワード<span style="color: rgb(14,14,14);"></span></span><input type="password"></legend>
-                    </div>
-                    <fieldset>
-                        <legend>Field Group</legend>
-                    </fieldset><a class="btn btn-info btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">ログイン</a></div>
-            </div>
+                </div>
+                <fieldset>
+                    <legend>Field Group</legend>
+                </fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: left;">投稿</a></div>
+        </div>
     </header>
     <footer>
         <div class="container">
@@ -247,6 +313,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
-​
-</html>
 
+</html>
