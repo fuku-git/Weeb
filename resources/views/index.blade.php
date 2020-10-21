@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -18,33 +19,28 @@
 
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Weeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Weeeb</a>
+            <button data-toggle="collapse" data-target="#navbarResponsive"
+                class="navbar-toggler navbar-toggler-right" type="button"
+                data-toogle="collapse" aria-controls="navbarResponsive"
+                aria-expanded="false"aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button> 
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+                <ul class="nav navbar-nav text-uppercase mx-auto">
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#connect">connect</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#how to">How to</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#boards">EVENT</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#">MYPAGE</a></li>
+                </ul><button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button><button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button></div>
         </div>
     </nav>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Weeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">connect</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">How to</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
     <header class="masthead" style="background-image: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);">
         <div class="container">
             <div class="intro-text">
@@ -54,8 +50,7 @@
                 <fieldset>
                     <legend style="text-shadow: 0px 0px;"></legend><span>&nbsp;</span></fieldset>
                 <div class="row">
-                    <div class="col"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">ユーザー登録</a><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services"
-                            style="color: rgb(18,18,18);background: #fca311;">ゲストログイン</a></div>
+                    <div class="col"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">ユーザー登録</a></div>
                 </div>
             </div>
         </div>
@@ -84,14 +79,13 @@
         </div>
         <p class="text-muted"></p>
         <div class="row">
-            <div class="col text-center"><a class="btn btn-primary text-center btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: center;">ユーザー登録</a><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button"
-                    href="#services" style="color: rgb(18,18,18);background: #fcad56;">ゲストログイン</a></div>
+            <div class="col text-center"><a class="btn btn-primary text-center btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: center;">ユーザー登録</a></div>
         </div>
     </section>
-    <section class="py-5">
+    <section id="how to">
         <div class="row">
             <div class="col">
-                <p style="text-align: center;">&nbsp; &nbsp; &nbsp;〜&nbsp;Weeeb 1分で分かる使い方 〜&nbsp;</p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/D-BhMdpCcP8" width="560" height="315" style="margin: auto;width: 100%;"></iframe></div>
+                <p style="text-align: center;">&nbsp; &nbsp; &nbsp;〜&nbsp;Weeeb 1分で分かる使い方 〜&nbsp;</p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/D-BhMdpCcP8" width="560" height="315" style="margin: auto;display: block;width: 70%;"></iframe></div>
         </div>
         <div class="container">
             <div class="row">
@@ -101,12 +95,13 @@
             </div>
         </div>
     </section>
-    {{-- 修正箇所 --}}
-    <section id="portfolio" class="bg-light">
+    <section id="connect" class="bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">さぁ、つながろう</h2>
+                    <h2 class="text-uppercase section-heading">
+                        <a href="#" style="font-size: 50px; color: rgb(18,18,18);">さぁ、つながろう</a>
+                    </h2>
                     <h3 class="section-subheading text-muted">〜最高の出会いを〜</h3>
                 </div>
             </div>
@@ -114,9 +109,9 @@
                 <div class="col-sm-6 col-md-4 col-lg-6 portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                            <div class="portfolio-hover-content"></div>
                         </div><img class="img-fluid" src="{{ asset('/assets/images/バックエンド.jpg') }}" alt="フロントエンド"></a>
-                    <div class="portfolio-caption">
+                    <div class="portfolio-caption text-center">
                         <h4>フロントエンド</h4>
                         <p class="text-muted">Vue.js CSS Sass</p>
                     </div>
@@ -124,9 +119,9 @@
                 <div class="col-sm-6 col-md-4 col-lg-6 portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                            <div class="portfolio-hover-content"></div>
                         </div><img class="img-fluid" src="{{ asset('/assets/images/バックエンド2.jpg') }}" alt="バックエンドエンジニア"></a>
-                    <div class="portfolio-caption">
+                    <div class="portfolio-caption text-center">
                         <h4>バックエンド</h4>
                         <p class="text-muted">PHP Ruby laravel</p>
                     </div>
@@ -134,9 +129,9 @@
                 <div class="col-sm-6 col-md-4 col-lg-6 portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                            <div class="portfolio-hover-content"></div>
                         </div><img class="img-fluid" src="{{ asset('/assets/images/フロント女性.jpg') }}" alt="デザイナー"></a>
-                    <div class="portfolio-caption">
+                    <div class="portfolio-caption text-center">
                         <h4>デザイナー</h4>
                         <p class="text-muted">dezain</p>
                     </div>
@@ -144,9 +139,9 @@
                 <div class="col-sm-6 col-md-4 col-lg-6 portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" href="{{ url('/') }}">
                         <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                            <div class="portfolio-hover-content"></div>
                         </div><img class="img-fluid" src="{{ asset('/assets/images/インフラ.jpg') }}" alt="インフラエンジニア"></a>
-                    <div class="portfolio-caption">
+                    <div class="portfolio-caption text-center">
                         <h4>インフラ</h4>
                         <p class="text-muted">AWS</p>
                     </div>
@@ -154,8 +149,7 @@
             </div>
         </div>
     </section>
-
-    <section id="services">
+    <section id="boards">
         <div class="container">
             <div class="row">
                 <h2 class="col text-center text-uppercase">
@@ -167,7 +161,6 @@
             </div>
         </div>
     </section>
-
     <section id="contact" style="background-image:url('assets/img/map-image.png');">
         <div class="container">
             <div class="row">
@@ -205,17 +198,18 @@
                         <h4>ヨネ</h4>
                         <p class="text-muted">PM</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-sm-4">
                     <div class="team-member"><img class="rounded-circle mx-auto" src="{{ asset('/assets/images/人物画像/フク.png') }}">
                         <h4>フク</h4>
                         <p class="text-muted">PL</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -226,7 +220,7 @@
                         <h4>Mayumi</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -237,7 +231,7 @@
                         <h4>ぽぽ</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -248,7 +242,7 @@
                         <h4>hiyoko</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -259,7 +253,7 @@
                         <h4>フナ</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -270,7 +264,7 @@
                         <h4>task</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -282,20 +276,20 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2020</span></div>
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© 2020 All Rights Reserved.</span></div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                        <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" style="background: rgb(244,7,220);"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" style="background: rgb(241,6,6);"><i class="fa fa-youtube-play" style="background: #f20606;"></i></a></li>
                         <li class="list-inline-item"></li>
                         <li class="list-inline-item"></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                        
+                        <li class="list-inline-item">Terms of Weeeb</a></li>
                     </ul>
                 </div>
             </div>

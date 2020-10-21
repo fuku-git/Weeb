@@ -16,3 +16,6 @@
 // });
 
 Route::get('/','PostsController@index')->name('top');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
