@@ -22,11 +22,14 @@ $factory->define(User::class, function (Faker $faker) {
         'user_email' => $faker->unique()->safeEmail,
         'pass' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         'icon'=> $faker->image,
-        'skill'=>$faker->randomElement([1,2]),
+        'authority'=>$faker->randomElement([1,2]),
         'role'=>$faker->randomElement([1,2,3,4]),
-        'sikll'=>$faker->realText(30),
+        'skill'=>$faker->realText(30),
         'portfolio'=>$faker->url,
+        'created_at'=>$faker->dateTime(),
+        'updated_at'=>$faker->dateTime(),
         'email_verified_at' => now(),
         'remember_token' => Str::random(10),
     ];
 });
+
