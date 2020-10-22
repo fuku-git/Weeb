@@ -56,7 +56,12 @@
                 </div>
                 <div class="row">
 
-                        <legend class="text-center">Fiel<span class="text-center" style="color: rgb(14,14,14);">職業<span style="color: rgb(14,14,14);"></span></span>d Gr<input type="search">oup</legend>
+                        <legend class="text-center">Fiel
+                            <span class="text-center" style="color: rgb(14,14,14);">職業
+                                <span style="color: rgb(14,14,14);"></span>
+                            </span>d Gr
+                            <input type="search">oup
+                        </legend>
 
                 </div>
 
