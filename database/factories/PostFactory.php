@@ -7,7 +7,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Post::class, function (Faker $faker) {
     return [
-        'job' => 'バックエンド',
-        'name' => 'フク'
+        'role' => 'バックエンド',
+        'name' => 'フク',
+        'skill' => 'php,laravel,docker,vagrant,git,GitHub'
     ];
 });
