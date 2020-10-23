@@ -11,6 +11,13 @@ class PostsController extends Controller
     {
         $posts = Post::orderBy('created_at','desc')->paginate(5);
         
+        return view('serch',['posts' => $posts]);
+    }
+
+    public function result()
+    {
+        $posts = Post::orderBy('created_at','desc')->paginate(5);
+        
         return view('posts.result',['posts' => $posts]);
     }
 }
