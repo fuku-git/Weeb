@@ -51,12 +51,16 @@
                 <div class="card mb-4">
                     <div class="card-header">
                     <h2>
-                        {{$post->job}}
+                        {{$post->role}}
                     </h2>
                     </div>
                     <div class="card-body">
                     <p class="card-text">
                         {{$post->name}}
+                    </p>
+                    <div class="card-body">
+                    <p class="card-text">
+                        {{$post->skill}}
                     </p>
                     </div>
                     <div class="card-footer">
