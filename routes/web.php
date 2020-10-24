@@ -16,3 +16,6 @@
 // });
 
 Route::get('/','PostsController@index')->name('top');
+
+Route::get('/board', 'PostController@index')->name('board'); //追加 sudoさんコピペ
+Route::resource('posts', 'PostController', ['only'=>['create', 'store']]);//追加
