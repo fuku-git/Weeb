@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
@@ -56,22 +56,21 @@
                 </div>
                 <div class="row">
 
-                        <legend class="text-center">Fiel
-                            <span class="text-center" style="color: rgb(14,14,14);">職業
-                                <span style="color: rgb(14,14,14);"></span>
-                            </span>d Gr
-                            <input type="search">oup
-                        </legend>
-
+        <h1>検索条件を入力してください</h1>
+            <form action="{{ url('/posts.result')}}" method="GET">
+                    {{ csrf_field()}}
+                    {{method_field('get')}}
+                <div class="form-group">
+                    <label>名前</label>
+                    <input type="search" class="form-control" 
+                    placeholder="検索したい名前を入力してください" name="search">
                 </div>
+                <button type="submit" class="btn btn-primary col-md-6">検索🔍</button>
+            </form>
+            <fieldset>
+                <legend>Field Group</legend>
+            </fieldset>
 
-                        <fieldset>
-                            <legend>Field Group</legend>
-                        </fieldset>
-
-
-
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">検索🔍</a>
                 <fieldset>
                     <legend>Fiel</legend>
                     <div class="row">
