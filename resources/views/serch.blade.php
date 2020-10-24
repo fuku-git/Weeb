@@ -57,13 +57,13 @@
                 <div class="row">
 
         <h1>検索条件を入力してください</h1>
-            <form action="{{ url('/posts.result')}}" method="post">
+            <form action="{{ url('/posts.result')}}" method="GET">
                     {{ csrf_field()}}
                     {{method_field('get')}}
                 <div class="form-group">
                     <label>名前</label>
-                    <input type="text" class="form-control" 
-                    placeholder="検索したい名前を入力してください" name="name">
+                    <input type="search" class="form-control" 
+                    placeholder="検索したい名前を入力してください" name="search">
                 </div>
                 <button type="submit" class="btn btn-primary col-md-6">検索🔍</button>
             </form>

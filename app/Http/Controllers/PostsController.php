@@ -11,7 +11,7 @@ class PostsController extends Controller
     {
         $posts = Post::orderBy('created_at','desc')->paginate(5);
         
-        return view('serch',['posts' => $posts]);
+        return view('posts.result',['posts' => $posts]);
     }
 
     public function result()
@@ -20,4 +20,10 @@ class PostsController extends Controller
         
         return view('posts.result',['posts' => $posts]);
     }
+
+    // public function result(Request $request)
+    // {
+    //     $search = $request->input('search');
+    //     dd($search);
+    // }
 }
