@@ -21,4 +21,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //検索結果を表示する
-Route::get('/posts.result','PostsController@result');
+Route::get('/posts.result','PostsController@result')->name('result');
