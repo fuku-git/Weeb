@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //検索結果を表示する
 Route::get('/posts.result','PostsController@result')->name('result');
+
+Route::get('/mypage', 'MyPageController@index')->name('mypage');
