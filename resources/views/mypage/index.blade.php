@@ -1,115 +1,169 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weeeb</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+    >
+
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Weeeeeeeeeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Weeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in"><span style="color:rgb(14,14,14);font size=12"><big><b>検索してみて下さい</big></b></span></div>
-                <div class="row">
-                    <div class="col">
-                        <fieldset>
-                            <legend>Field Group</legend>
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="row">
-
-        <h1>検索条件を入力してください</h1>
-            <form action="{{ url('/posts.result')}}" method="GET">
-                    {{ csrf_field()}}
-                    {{method_field('get')}}
-                <div class="form-group">
-                    <label>名前</label>
-                    <input type="search" class="form-control" 
-                    placeholder="検索したい名前を入力してください" name="search">
-                </div>
-                <button type="submit" class="btn btn-primary col-md-6">検索🔍</button>
-            </form>
-            <fieldset>
-                <legend>Field Group</legend>
-            </fieldset>
-
-                <fieldset>
-                    <legend>Fiel</legend>
-                    <div class="row">
-                        <div class="col">
-                            <fieldset>
-                                <legend style="color: rgb(10,9,9);">〜このような出会いがあります〜</legend>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </fieldset>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">パートナーが見つかる</h3>
-                        <p style="color:#000000;text-align:left;">喜びを分かち合える相棒探し!!</p>
-                        <br>
-                        <picture><img src="assets/images/1.jpg"></picture>
-                        <br><br><br>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">一緒に勉強できる</h3>
-                        <p style="color:#000000;text-align:left;">仲間を探して挫折を防ごう!!</p>
-                        <br>
-                        <picture><img src="assets/images/2.jpg"></picture>
-                        <br><br><br>
-                    </div>
-                    <br>
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">相談できる</h3>
-                        <p style="color:#000000;text-align:left;">憧れの人・メンターを見つけよう!!</p>
-                        <br>
-                        <picture><img src="assets/images/3.jpg"></picture>
-                    </div>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Weeeb</a>
+                <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+                        type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation"><i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-nav ml-auto text-uppercase">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
+
+
+        <div class="intro-text">
+            <div class="jumbotron" style="background: #f4ed7c;">
+                <div class="container">
+                    <div class="mt-5">
+                        <div class="float-left mx-4">
+                            <div class="col px-0 bg-white">
+                                <span class="center-block"><img src="" style="width: 120px;height: 120px;"></span>
+                                <div class="bg-white px-2">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                        <path fill-rule="evenodd" d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                                    </svg>
+                                    <span>写真を変更</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="col mt-4">
+                                <h2 class="text-left" style="color: rgb(29,31,30);font-family: 'Droid Serif';">Mayumi Sudo</h3>
+                            </div>
+                        </div>
+                        <div class="row m-2">
+                            <div class="col">
+                                <h5 class="text-left" style="color: rgb(8,8,8);font-family: 'Droid Serif';">フロントエンド</h5>
+                            </div>
+                        </div>
+
+                        <!-- お気に入り、繋がった人を表示する時のデザイン
+                        <div class="row float-right">
+                            <div class="d-inline-block ml-5">
+                                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-diagram-3-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z"/>
+                                </svg>
+                                <span class="navbar-brand ml-3">connect</span>
+                                <div class="d-inline-block mx-1">
+                                    <a class="navbar-brand">1</a>
+                                </div>
+                            </div>
+                            <div class="d-inline-block ml-5">
+                                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <span class="navbar-brand ml-3">follow</span>
+                                <div class="d-inline-block mx-1">
+                                    <a class="navbar-brand">1</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="row">
+                            <div class="d-inline-block ml-5">
+                                <button type="button" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger" value="Input" style="color: rgb(18,18,18);background: #fca311; border:none">編集
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-lead-in w-75 mx-auto">
+                <div class="col-md">
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-form-label d-flex align-items-center">
+                                <label class="navbar-brand">メールアドレス</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-form-label d-flex align-items-center">
+                                <label class="navbar-brand">自己紹介</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-form-label d-flex align-items-center">
+                                <label class="navbar-brand">スキル</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2 col-form-label d-flex align-items-start">
+                                <label class="navbar-brand">ポートフォリオ</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="input-group mb-0">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon3">https://</span>
+                                    </div>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="text-center mr-5">
+                            <button type="button" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger" value="Submit" style="color: rgb(18,18,18);background: #fca311; border:none">更新</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
     <footer>
         <div class="container">
             <div class="row">
@@ -283,3 +337,4 @@
 </body>
 
 </html>
+

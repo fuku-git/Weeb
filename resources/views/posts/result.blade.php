@@ -43,73 +43,41 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
+
+    <header class="masthead text-dark" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in"><span style="color:rgb(14,14,14);font size=12"><big><b>検索してみて下さい</big></b></span></div>
-                <div class="row">
-                    <div class="col">
-                        <fieldset>
-                            <legend>Field Group</legend>
-                        </fieldset>
+            @foreach ($posts as $post)
+            <div class="container my-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                    <h2>
+                        {{$post->role}}
+                    </h2>
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text">
+                        {{$post->name}}
+                    </p>
+                    <div class="card-body">
+                    <p class="card-text">
+                        {{$post->skill}}
+                    </p>
+                    </div>
+                    <div class="card-footer">
+                    <span>
+                        投稿日時：{{$post->created_at->format('Y-m-d')}}
+                    </span>
                     </div>
                 </div>
-                <div class="row">
-
-        <h1>検索条件を入力してください</h1>
-            <form action="{{ url('/posts.result')}}" method="GET">
-                    {{ csrf_field()}}
-                    {{method_field('get')}}
-                <div class="form-group">
-                    <label>名前</label>
-                    <input type="search" class="form-control" 
-                    placeholder="検索したい名前を入力してください" name="search">
                 </div>
-                <button type="submit" class="btn btn-primary col-md-6">検索🔍</button>
-            </form>
-            <fieldset>
-                <legend>Field Group</legend>
-            </fieldset>
+                @endforeach
 
-                <fieldset>
-                    <legend>Fiel</legend>
-                    <div class="row">
-                        <div class="col">
-                            <fieldset>
-                                <legend style="color: rgb(10,9,9);">〜このような出会いがあります〜</legend>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                </fieldset>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">パートナーが見つかる</h3>
-                        <p style="color:#000000;text-align:left;">喜びを分かち合える相棒探し!!</p>
-                        <br>
-                        <picture><img src="assets/images/1.jpg"></picture>
-                        <br><br><br>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">一緒に勉強できる</h3>
-                        <p style="color:#000000;text-align:left;">仲間を探して挫折を防ごう!!</p>
-                        <br>
-                        <picture><img src="assets/images/2.jpg"></picture>
-                        <br><br><br>
-                    </div>
-                    <br>
-                    <div class="col-lg-4">
-                        <h3 class="text-left" style="color: rgb(10,9,9);width: 300px;">相談できる</h3>
-                        <p style="color:#000000;text-align:left;">憧れの人・メンターを見つけよう!!</p>
-                        <br>
-                        <picture><img src="assets/images/3.jpg"></picture>
-                    </div>
+                <div class="d-flex justify-content-center mb-5">
+                    {{ $posts->links() }}
                 </div>
-            </div>
         </div>
     </header>
+    
     <footer>
         <div class="container">
             <div class="row">

@@ -3,12 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class PostsController extends Controller
 {
     public function index()
     {
-        return view('index');
-
+        $posts = Post::orderBy('created_at','desc')->paginate(5);
+        return view('posts.result',['posts' => $posts]);
     }
+
+    public function result()
+    {
+        $posts = Post::orderBy('created_at','desc')->paginate(5);
+        
+        return view('posts.result',['posts' => $posts]);
+    }
+
+    // public function result(Request $request)
+    // {
+    //     $search = $request->input('search');
+    //     dd($search);
+    // }
 }
