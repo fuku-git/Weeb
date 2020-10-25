@@ -63,7 +63,7 @@
                 <div class="form-group">
                     <label>名前</label>
                     <input type="search" class="form-control" 
-                    placeholder="検索したい名前を入力してください" name="search">
+                    placeholder="検索したい名前を入力してください" name="search" required>
                 </div>
                 <button type="submit" class="btn btn-primary col-md-6">検索🔍</button>
             </form>
