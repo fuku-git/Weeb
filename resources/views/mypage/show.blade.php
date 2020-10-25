@@ -117,7 +117,7 @@
                                 <label class="navbar-brand">メールアドレス</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" value="{{ $user->user_email }}">
+                                <input type="email" class="form-control" value="{{ $user->user_email }}" readonly>
                             </div>
                         </div>
 
@@ -137,7 +137,7 @@
                                 <label class="navbar-brand">スキル</label>
                             </div>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="3">{{ $user->skill }}</textarea>
+                                <textarea class="form-control" rows="3" readonly>{{ $user->skill }}</textarea>
                             </div>
                         </div>
 
@@ -146,13 +146,14 @@
                                 <label class="navbar-brand">ポートフォリオ</label>
                             </div>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="5">{{ $user->portfolio }}</textarea>
+                                <textarea class="form-control" rows="5" readonly>{{ $user->portfolio }}</textarea>
                             </div>
                         </div>
 
+                        <!-- editで表示させる
                         <div class="text-center mr-5">
                             <button type="button" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger" value="Submit" style="color: rgb(18,18,18);background: #fca311; border:none">更新</button>
-                        </div>
+                        </div>-->
                     </form>
                 </div>
             </div>
@@ -180,6 +181,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
     <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal1">
         <div class="modal-dialog modal-lg" role="document">
