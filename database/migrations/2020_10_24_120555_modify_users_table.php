@@ -46,6 +46,18 @@ class ModifyUsersTable extends Migration
     {
         //
         Schema::table('users', function (Blueprint $table) {
+            // 追加したカラム名を削除
+            $table->dropColumn('icon');
+            $table->dropColumn('authority');
+            $table->dropColumn('role');
+            $table->dropColumn('skill');
+            $table->dropColumn('portfolio');
+
+            //データ型を初期値に戻す
+            $table->string('user_name')->change();
+            $table->string('user_email')->change();
+            $table->string('pass')->change();
+
             //カラム名を初期値に戻す
             $table->renameColumn('user_id', 'id');
             $table->renameColumn('user_name', 'name');
@@ -53,18 +65,6 @@ class ModifyUsersTable extends Migration
             $table->renameColumn('pass', 'password');
             $table->renameColumn('created_user', 'created_at');
             $table->renameColumn('updated_user', 'updated_at');
-
-            //データ型を初期値に戻す
-            $table->string('name')->change();
-            $table->string('email')->change();
-            $table->string('password')->change();
-
-            // 追加したカラム名を削除
-            $table->dropColumn('icon');
-            $table->dropColumn('authority');
-            $table->dropColumn('role');
-            $table->dropColumn('skill');
-            $table->dropColumn('portfolio');
 
         });
     }
