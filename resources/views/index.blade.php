@@ -59,6 +59,16 @@
             </div>
         </div>
     </header>
+
+    {{-- @extends('layout')
+
+    @section('content')
+
+        <div>
+            hello index
+        </div>
+    @endsection('content') --}}
+
     <section id="services">
         <div class="container">
             <div class="row">
@@ -277,6 +287,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <div class="row">

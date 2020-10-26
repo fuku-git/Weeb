@@ -59,6 +59,10 @@
         </div>
     </header>
 
+    {{-- <main>
+        @yeild('content')
+    </main> --}}
+
     {{-- <section id="services">
         <div class="container">
             <div class="row">
