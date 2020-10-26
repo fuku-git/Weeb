@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Weeeb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Home - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -13,51 +14,52 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
-
-    <link rel="stylesheet" 
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
-        crossorigin="anonymous"
-    > 
-    
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">Weeeb</a>
-            <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" 
-                    type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation"><i class="fa fa-bars"></i>
-            </button>
+            <button data-toggle="collapse" data-target="#navbarResponsive"
+                class="navbar-toggler navbar-toggler-right" type="button"
+                data-toogle="collapse" aria-controls="navbarResponsive"
+                aria-expanded="false"aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button> 
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                <ul class="nav navbar-nav text-uppercase mx-auto">
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#connect">connect</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#how to">How to</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#boards">EVENT</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <li class="nav-item "><a class="nav-link" href="{{ url('/mypage.index')}}">MYPAGE</a></li>
                 </ul>
+                <button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button>
+                <button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button>
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background-image:
-            url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);">
+    
+    <header class="masthead" style="background-image: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">
-                    <span style="color: rgb(14,14,14);">最高のパートナーを見つけよう!!</span>
+                <div class="intro-lead-in"></div>
+                <div class="intro-heading text-uppercase" style="font-family: 'Droid Serif';"><span class="text-capitalize" style="font-family: 'Kaushan Script', cursive;color: #060605;">Webエンジニアよ集まれ</span></div>
+                <div class="intro-heading text-uppercase" style="font-family: 'Droid Serif';"><span class="text-capitalize" style="font-family: 'Kaushan Script', cursive;color: #fcd116;font-size: 50px;">Webエンジニア matching サイト</span></div><span style="color: #080808;font-family: 'Kaushan Script', cursive;font-size: 30px;">あなたの最高のパートナーを見つけよう</span>
+                <fieldset>
+                    <legend style="text-shadow: 0px 0px;"></legend><span>&nbsp;</span></fieldset>
+                <div class="row">
+                    <div class="col"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">ユーザー登録</a></div>
                 </div>
-                <div class="intro-heading text-uppercase">
-                    <span>It's Nice To Meet You</span>
-                </div>
-                <a class="btn btn-warning btn-xl text-uppercase js-scroll-trigger" 
-                role="button" href="#services" style="color: rgb(18,18,18);">さっそくはじめる</a>
             </div>
         </div>
     </header>
-    <section id="services">
+
+    {{-- <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -238,24 +240,24 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2020</span></div>
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© 2020 All Rights Reserved.</span></div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a class="bg-primary" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a class="bg-pink" href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a class="bg-danger" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                        <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" style="background: rgb(244,7,220);"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" style="background: rgb(241,6,6);"><i class="fa fa-youtube-play" style="background: #f20606;"></i></a></li>
                         <li class="list-inline-item"></li>
                         <li class="list-inline-item"></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                        
+                        <li class="list-inline-item">Terms of Weeeb</a></li>
                     </ul>
                 </div>
             </div>

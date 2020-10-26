@@ -57,7 +57,7 @@
                 <div class="row">
 
         <h1>検索条件を入力してください</h1>
-            <form action="{{ url('/posts.result')}}" method="GET">
+            <form action="{{ url('/posts.result')}}" method="get">
                     {{ csrf_field()}}
                     {{method_field('get')}}
                 <div class="form-group">

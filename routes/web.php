@@ -16,9 +16,14 @@
 // });
 
 Route::get('/','PostsController@index')->name('top');
+
+Route::get('/layout','PostsController@layout')->name('layout');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
 
 //ダミーデータを表示する
 Route::get('/posts.result','PostsController@result')->name('result');

@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Home - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
@@ -36,8 +37,11 @@
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#boards">EVENT</a></li>
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    <li class="nav-item "><a class="nav-link" href="#">MYPAGE</a></li>
-                </ul><button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button><button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button></div>
+                    <li class="nav-item "><a class="nav-link" href="{{ url('/mypage.index')}}">MYPAGE</a></li>
+                </ul>
+                <button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button>
+                <button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button>
+            </div>
         </div>
     </nav>
     
@@ -100,7 +104,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">
-                        <a href="#" style="font-size: 50px; color: rgb(18,18,18);">さぁ、つながろう</a>
+                        <a href="{{ url('/serch')}}" style="font-size: 50px; color: rgb(18,18,18);">さぁ、つながろう</a>
                     </h2>
                     <h3 class="section-subheading text-muted">〜最高の出会いを〜</h3>
                 </div>
