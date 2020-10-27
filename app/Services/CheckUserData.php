@@ -10,7 +10,7 @@ class CheckUserData
             $authority = '運営';
         }
         if($data->authority === ２){
-            $gender = 'USER';
+            $authority = 'USER';
         }
 
         return $authority;
@@ -19,13 +19,13 @@ class CheckUserData
 
     public static function checkRole($data){
         if($data->role === 1){
-            $role = 'フロントエンド';
+            $role = 'フロントエンドエンジニア';
         }
         if($data->role === 2){
-            $role = 'バックエンド';
+            $role = 'バックエンドエンジニア';
         }
         if($data->role === 3){
-            $role = 'インフラ';
+            $role = 'インフラエンジニア';
         }
         if($data->role === 4){
             $role = 'デザイナー';
