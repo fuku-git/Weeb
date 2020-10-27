@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\MyPage;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\Controller;
+use App\Services\CheckUserData;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class MyPageController extends Controller
 {
@@ -16,7 +18,6 @@ class MyPageController extends Controller
     public function index()
     {
         //
-        return view ('mypage.index');
     }
 
     /**
@@ -48,7 +49,10 @@ class MyPageController extends Controller
      */
     public function show($id)
     {
-        //
+        //ユーザーページの表示
+        $user = MyPage::where('user_id', $id)->first();
+        $role = CheckUserData::checkRole($user);
+        return view('mypages.show',compact('user','role'));
     }
 
     /**
@@ -60,6 +64,9 @@ class MyPageController extends Controller
     public function edit($id)
     {
         //
+        $user = MyPage::where('user_id', $id)->first();
+        $role = CheckUserData::checkRole($user);
+        return view('mypages.edit',compact('user','role'));
     }
 
     /**
@@ -72,6 +79,10 @@ class MyPageController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $user = MyPage::where('user_id', $id)->first();
+        $form = $request->all();
+        $user->fill($form)->save();
+        return redirect('mypages.show',compact('user','role'));
     }
 
     /**
