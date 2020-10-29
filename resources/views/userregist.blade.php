@@ -16,31 +16,25 @@
 
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Weeeeeeeeeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Weeeb</a>
+            <button data-toggle="collapse" data-target="#navbarResponsive"
+                class="navbar-toggler navbar-toggler-right" type="button"
+                data-toogle="collapse" aria-controls="navbarResponsive"
+                aria-expanded="false"aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button> 
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#page-top">Weeeb</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto text-uppercase">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+                <ul class="nav navbar-nav text-uppercase mx-auto">
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#connect">connect</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#how to">How to</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#boards">EVENT</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#">MYPAGE</a></li>
+                </ul><button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button><button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button></div>
         </div>
     </nav>
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
@@ -55,7 +49,7 @@
                                 </div>
                                 <div class="col-xl-8"><input type="text" style="width: 700px;"></div>
                             </div>
-                            <legend>Field Group</legend>
+                            <legend>　</legend>
                         </fieldset>
                     </div>
                     <div class="col">
@@ -65,7 +59,7 @@
                                 </div>
                                 <div class="col-xl-8"><input type="text" style="width: 700px;"></div>
                             </div>
-                            <legend>Field Group</legend>
+                            <legend>　</legend>
                         </fieldset>
                     </div>
                     <div class="col">
@@ -75,7 +69,7 @@
                                 </div>
                                 <div class="col-xl-8"><input type="email" style="width: 700px;"></div>
                             </div>
-                            <legend>Field Group</legend>
+                            <legend>　</legend>
                         </fieldset>
                     </div>
                     <div class="col">
@@ -85,7 +79,7 @@
                                 </div>
                                 <div class="col-xl-8"><input type="email" style="width: 700px;"></div>
                             </div>
-                            <legend>Field Group</legend>
+                            <legend>　</legend>
                         </fieldset>
                     </div>
                     <div class="col">
@@ -95,7 +89,7 @@
                                 </div>
                                 <div class="col-xl-8"><input type="password" style="width: 700px;"></div>
                             </div>
-                            <legend>Field Group</legend>
+                            <legend>　</legend>
                         </fieldset>
                     </div>
                     <div class="col">
@@ -105,55 +99,49 @@
                                 </div>
                                 <div class="col-xl-8"><input type="password" style="width: 700px;"></div>
                             </div>
-                            <legend>Field Group</legend>
+                            <legend>　</legend>
                         </fieldset>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <fieldset>
-                            <legend>Field Group</legend>
+                            <legend>　</legend>
                         </fieldset>
                         <fieldset>
                             <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">ポジション<span style="color: rgb(14,14,14);"></span></span>
                             </div>
-                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Project Leader</a>
-                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Project Manager</a>
-                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Coder</a>
+                            <button class="btn btn-primary" type="button" style="color: rgb(16,15,15); margin-left:120px;">フロントエンド</button>
+                            <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">バックエンド</button>
+                            <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">インフラ</button>
+                            <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">デザイン</button>
                         </fieldset>
                         <legend class="text-center"></legend>
                     </div>
                 </div>
                 <fieldset></fieldset>
                 <fieldset>
-                    <legend>Field Group</legend>
+                    <legend></legend>
                     <div class="row">
                         <div class="col">
                             <fieldset>
-                                <legend>Field Group</legend>
-                            </fieldset>
-                            <fieldset>
-                                <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">スキル<span style="color: rgb(14,14,14);"></span></span>
+                                <legend>　</legend>
+                                <div class="row">
+                                    <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">スキル</></span></div>
+                                    <div class="col"><textarea maxlength="1000" placeholder="自分のもつスキルを記載して下さい　例:プログラミング言語" style="height: 300px;width: 700px;"></textarea></div>
                                 </div>
-                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Java</a>
-                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">PHP</a>
-                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Ruby</a>
-                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Vue.js</a><br>
-                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Node.js</a>
-                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">React</a>
-                                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">Python</a>
                             </fieldset>
                             <legend class="text-center"></legend>
                         </div>
                     </div>
-                    <legend>Field Group</legend>
+                    <legend>　</legend>
                 </fieldset>
                 <fieldset>
                     <div class="col-xl-12 offset-lg-0 offset-xl-1">
                         <legend class="text-center" style="color: rgb(21,19,19);"></legend>
                     </div>
                 </fieldset>
-                <fieldset></fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">登録</a></div>
+                <fieldset></fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="mypage" style="color: rgb(18,18,18); margin-top:50px;">登録</a></div>
         </div>
     </header>
     <footer>
