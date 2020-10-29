@@ -45,14 +45,13 @@
         </nav>
     </header>
 
-
         <div class="intro-text">
             <div class="jumbotron" style="background: #f4ed7c;">
                 <div class="container">
                     <div class="mt-5">
                         <div class="float-left mx-4">
                             <div class="col px-0 bg-white">
-                                <span class="center-block"><img src="" style="width: 120px;height: 120px;"></span>
+                                <span class="center-block"><img src="{{ $user->image }}" style="width: 120px;height: 120px;"></span>
                                 <div class="bg-white px-2">
                                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
@@ -64,14 +63,15 @@
                         </div>
                         <div class="row m-2">
                             <div class="col mt-4">
-                                <h2 class="text-left" style="color: rgb(29,31,30);font-family: 'Droid Serif';">Mayumi Sudo</h3>
+                                <h2 class="text-left" style="color: rgb(29,31,30);font-family: 'Droid Serif';">{{ $user->user_name }}</h3>
                             </div>
                         </div>
                         <div class="row m-2">
                             <div class="col">
-                                <h5 class="text-left" style="color: rgb(8,8,8);font-family: 'Droid Serif';">フロントエンド</h5>
+                                <h5 class="text-left" style="color: rgb(8,8,8);font-family: 'Droid Serif';">{{ $role }}</h5>
                             </div>
                         </div>
+
 
                         <!-- お気に入り、繋がった人を表示する時のデザイン
                         <div class="row float-right">
@@ -94,7 +94,7 @@
                                 </div>
                             </div>
                         </div> -->
-
+                        <!-- showで表示させるためコメントアウト
                         <div class="row">
                             <div class="d-inline-block ml-5">
                                 <button type="button" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger" value="Input" style="color: rgb(18,18,18);background: #fca311; border:none">編集
@@ -104,7 +104,7 @@
                                     </svg>
                                 </button>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -112,17 +112,20 @@
 
             <div class="intro-lead-in w-75 mx-auto">
                 <div class="col-md">
-                    <form>
+                    <form method ="POST" action="{{ route('mypages.update', ['id' => $user->user_id]) }}">
+                        @method('PATCH')
+                        @csrf
                         <div class="form-group row">
                             <div class="col-sm-2 col-form-label d-flex align-items-center">
                                 <label class="navbar-brand">メールアドレス</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control">
+                                <input type="email" class="form-control" value="{{ $user->user_email }}" >
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <!-- テーブルにカラムないため削除
+                            <div class="form-group row">
                             <div class="col-sm-2 col-form-label d-flex align-items-center">
                                 <label class="navbar-brand">自己紹介</label>
                             </div>
@@ -130,13 +133,14 @@
                                 <textarea class="form-control" rows="3"></textarea>
                             </div>
                         </div>
+                        -->
 
                         <div class="form-group row">
                             <div class="col-sm-2 col-form-label d-flex align-items-center">
                                 <label class="navbar-brand">スキル</label>
                             </div>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" rows="3" >{{ $user->skill }}</textarea>
                             </div>
                         </div>
 
@@ -145,18 +149,13 @@
                                 <label class="navbar-brand">ポートフォリオ</label>
                             </div>
                             <div class="col-sm-10">
-                                <div class="input-group mb-0">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon3">https://</span>
-                                    </div>
-                                    <input type="email" class="form-control">
-                                </div>
-                                <textarea class="form-control" rows="5"></textarea>
+                                <textarea class="form-control" rows="5" >{{ $user->portfolio }}</textarea>
                             </div>
                         </div>
 
+
                         <div class="text-center mr-5">
-                            <button type="button" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger" value="Submit" style="color: rgb(18,18,18);background: #fca311; border:none">更新</button>
+                            <button type="submit" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger"  style="color: rgb(18,18,18);background: #fca311; border:none" formaction="{{ route('mypages.show', ['id' => $user->user_id]) }}">更新</button>
                         </div>
                     </form>
                 </div>
@@ -185,6 +184,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
     <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal1">
         <div class="modal-dialog modal-lg" role="document">
@@ -337,4 +337,3 @@
 </body>
 
 </html>
-
