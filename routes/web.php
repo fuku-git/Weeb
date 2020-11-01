@@ -31,4 +31,10 @@ Route::get('/posts.result','PostsController@result')->name('result');
 //検索結果を表示する
 Route::get('/serch','PostsController@serch')->name('serch');
 
-Route::get('/mypage', 'MyPageController@index')->name('mypage');
+// マイページを表示する
+Route::group(['prefix'=>'mypages','middleware'=>'auth'],function(){
+    Route::get('/{id}','MyPageController@show')->name('mypages.show');
+    Route::get('/{id}/edit','MyPageController@edit')->name('mypages.edit');
+    Route::PATCH('/{id}','MyPageController@update')->name('mypages.update');
+            });
+
