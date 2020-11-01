@@ -255,7 +255,7 @@
                         <h4>hiyoko</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/yokopiyohiyoko" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
