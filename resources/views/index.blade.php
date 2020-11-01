@@ -53,7 +53,7 @@
                 <fieldset>
                     <legend style="text-shadow: 0px 0px;"></legend><span>&nbsp;</span></fieldset>
                 <div class="row">
-                    <div class="col"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">ユーザー登録</a></div>
+                    <div class="col"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="{{ url('/userregist')}}" style="color: rgb(18,18,18);">ユーザー登録</a></div>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
         </div>
         <p class="text-muted"></p>
         <div class="row">
-            <div class="col text-center"><a class="btn btn-primary text-center btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: center;">ユーザー登録</a></div>
+            <div class="col text-center"><a class="btn btn-primary text-center btn-xl text-uppercase js-scroll-trigger" role="button" href="{{ url('/userregist')}}" style="color: rgb(18,18,18);text-align: center;">ユーザー登録</a></div>
         </div>
     </section>
     <section id="how to">
