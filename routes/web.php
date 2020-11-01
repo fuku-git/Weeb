@@ -32,3 +32,5 @@ Route::get('/posts.result','PostsController@result')->name('result');
 Route::get('/serch','PostsController@serch')->name('serch');
 
 Route::get('/mypage', 'MyPageController@index')->name('mypage');
+
+Route::get('/userregist', 'UserRegisterController@index')->name('userregist');

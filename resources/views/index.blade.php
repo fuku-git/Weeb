@@ -36,9 +36,9 @@
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#boards">EVENT</a></li>
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    <li class="nav-item "><a class="nav-link" href="{{ url('/mypage.index')}}">MYPAGE</a></li>
+                    <li class="nav-item "><a class="nav-link" href="{{ url('/mypages.edit')}}">MYPAGE</a></li>
                 </ul>
-                <button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button>
+                <button class="btn btn-primary" type="button" onclick="location.href='./login'"　style="color: rgb(16,15,15);">ログイン</button>
                 <button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button>
             </div>
         </div>
@@ -166,7 +166,7 @@
         <div class="container">
             <div class="row">
                 <h2 class="col text-center text-uppercase">
-                    <a href="#" style="font-size: 50px; color: rgb(18,18,18);">イベントはこちら</a>
+                    <a href="{{ url('/boards')}}" style="font-size: 50px; color: rgb(18,18,18);">イベントはこちら</a>
                 </h2>
             </div>
             <div style="text-align: center">
@@ -222,7 +222,7 @@
                         <h4>フク</h4>
                         <p class="text-muted">PL</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/fuku_2021tokyo" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
