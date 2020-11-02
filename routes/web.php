@@ -34,3 +34,8 @@ Route::get('/serch','PostsController@serch')->name('serch');
 Route::get('/mypage', 'MyPageController@index')->name('mypage');
 
 Route::get('/userregist', 'UserRegisterController@index')->name('userregist');
+
+//掲示板を表示する
+Route::get('/boards', 'BoardsController@index')->name('boards');
+
+Route::get('/thread', 'ThreadController@index')->name('thread');
