@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Boards; //
+use App\Boards;
 
 class BoardsController extends Controller
 {
@@ -14,12 +14,13 @@ class BoardsController extends Controller
      */
     public function index()
     {
-        return view('boards');
+
+        $boards = boards::orderBy('created_at', 'desc')->get();
+        return view('bbs.boards', ['boards' => $boards]); //投稿を作成日時の降順で取得し bbs/boards.blade にデータを渡してビューを生成する内容
     }
 
-    //{ 修正中
-        //$Boards = boards::orderBy('create_at', 'desc')->get();
-        //return view('bbs.boards', ['boards' => $boards]); //投稿を作成日時の降順で取得し bbs/boards.blade にデータを渡してビューを生成する内容
-        //return view('boards');
-    //}
+    public function create()
+    {
+        echo "create"; //@TODO 投稿処理を行う
+    }
 }
