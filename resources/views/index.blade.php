@@ -166,7 +166,7 @@
         <div class="container">
             <div class="row">
                 <h2 class="col text-center text-uppercase">
-                    <a href="#" style="font-size: 50px; color: rgb(18,18,18);">イベントはこちら</a>
+                    <a href="{{ url('/boards') }}" style="font-size: 50px; color: rgb(18,18,18);">イベントはこちら</a>
                 </h2>
             </div>
             <div style="text-align: center">
