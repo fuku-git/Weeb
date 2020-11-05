@@ -13,9 +13,9 @@ class CreateBoardsTable extends Migration //postからboardsに変更
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->bigIncrements('id'); //increments('board_id');
-            $table->string('name'); //string('user_name'); 
+        Schema::create('boards', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
             $table->text('post_contents');
             $table->text('post_body');
             // $table->foreign('user_name')->references('id')->on('users')->onDelete('cascade');
@@ -30,6 +30,6 @@ class CreateBoardsTable extends Migration //postからboardsに変更
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('boards');
     }
 }
