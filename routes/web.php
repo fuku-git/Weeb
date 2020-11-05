@@ -31,6 +31,10 @@ Route::get('/posts.result','PostsController@result')->name('result');
 //検索結果を表示する
 Route::get('/serch','PostsController@serch')->name('serch');
 
+Route::get('/mypage', 'MyPageController@index')->name('mypage');
+
+Route::get('/userregist', 'UserRegisterController@index')->name('userregist');
+
 // マイページを表示する
 Route::group(['prefix'=>'mypages','middleware'=>'auth'],function(){
     Route::get('/{id}','MyPageController@show')->name('mypages.show');
@@ -38,10 +42,6 @@ Route::group(['prefix'=>'mypages','middleware'=>'auth'],function(){
     Route::PATCH('/{id}','MyPageController@update')->name('mypages.update');
             });
 
-            
 //掲示板を表示する
 Route::get('/boards', 'BoardsController@index')->name('boards');
 Route::get('/thread', 'ThreadController@index')->name('thread');
-
-
-

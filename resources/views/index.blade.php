@@ -36,9 +36,9 @@
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#boards">EVENT</a></li>
                     <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    <li class="nav-item "><a class="nav-link" href="{{ url('/mypage.index')}}">MYPAGE</a></li>
+                    <li class="nav-item "><a class="nav-link" href="{{ url('/mypages.edit')}}">MYPAGE</a></li>
                 </ul>
-                <button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button>
+                <button class="btn btn-primary" type="button" onclick="location.href='./login'"　style="color: rgb(16,15,15);">ログイン</button>
                 <button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button>
             </div>
         </div>
@@ -211,7 +211,7 @@
                         <h4>ヨネ</h4>
                         <p class="text-muted">PM</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/yone3_43" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                         </ul>
                     </div>
@@ -222,7 +222,7 @@
                         <h4>フク</h4>
                         <p class="text-muted">PL</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/fuku_2021tokyo" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -233,7 +233,7 @@
                         <h4>Mayumi</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/zumi00i" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -244,7 +244,7 @@
                         <h4>ぽぽ</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/popo0129tt35" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -255,7 +255,7 @@
                         <h4>hiyoko</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/yokopiyohiyoko" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -266,7 +266,7 @@
                         <h4>フナ</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/funassiiy" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
@@ -277,7 +277,7 @@
                         <h4>task</h4>
                         <p class="text-muted">Backend</p>
                         <ul class="list-inline social-buttons">
-                            <li class="list-inline-item"><a href="#" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/plusninesty" style="background: rgb(29,161,242);"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"></li>
                             <li class="list-inline-item"></li>
                         </ul>
