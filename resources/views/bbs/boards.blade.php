@@ -69,45 +69,27 @@
                             </legend>
                         </fieldset>
                         <fieldset>
+                        
                             <div class="row">
                                 <div class="col offset-lg-1" style="display:flex;">
-                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
+                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg"></P>
                                         <div class="thread" style="color: rgb(0,0,0)";>
-                                            <dr>
-                                                <dd>ユーザー：<?php // ?></dd>
-                                                <dd>タイトル：<?php // ?></dd>
-                                                <dd>内容：<?php // ?></dd>
-                                            </dr>
+
+
+                                        @foreach($boards as $board)
+                                            <dl>
+                                                <dd>投稿日：{{ $board->created_at ->format('Y.m.d') }}</dd>
+                                                <dd>ユーザー：{{ $board->name }}</dd>
+                                                <dd>タイトル：{{ $board->post_contents }}</dd>
+                                                <dd>内容：{{ nl2br(e(Str::limit($board->post_body, 80))) }}</dd>
+                                                    <? if($boards->comments->count() >= 1): //コメント未作成 ?> -->
+                                                        <p><span class="badge badge-primary">コメント：<? $boards->comments->count() ?>件</span></p>
+                                                    <? endif; ?>
+                                            </dl>
+                                        @endforeach
+
+
                                         </div>
-                                    </P>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col offset-lg-1" style="display:flex;">
-                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
-                                        <div class="thread" style="color: rgb(0,0,0)";>
-                                            <dr>
-                                                <dd>ユーザー：<?php // ?></dd>
-                                                <dd>タイトル：<?php // ?></dd>
-                                                <dd>内容：<?php // ?></dd>
-                                            </dr>
-                                        </div>
-                                    </P>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col offset-lg-1" style="display:flex;">
-                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
-                                        <div class="thread" style="color: rgb(0,0,0)";>
-                                            <dr>
-                                                <dd>ユーザー：<?php // ?></dd>
-                                                <dd>タイトル：<?php // ?></dd>
-                                                <dd>内容：<?php // ?></dd>
-                                            </dr>
-                                        </div>
-                                    </P>
-                                </div>
-                            </div>
                         </fieldset>
                     </div>
                 </div>
@@ -119,6 +101,10 @@
                             <fieldset>
                                 <legend>Field Group</legend>
                             </fieldset>
+
+            <form method="post" action="{{ url('/creater') }}">
+                @csrf
+
                         </div>
                     </div>
                     <div class="row">
@@ -140,6 +126,9 @@
                 <fieldset>
                     <legend>Field Group</legend>
                 </fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: left;">投稿</a></div>
+
+            </form>
+
         </div>
     </header>
     <footer>

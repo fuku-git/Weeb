@@ -6,10 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Boards extends Model
 {
-    protected $fillable = ['id','post_contents','post_body',];
-    protected $table = 'boards';
+    //protected $fillable = ['id','post_contents','post_body',];
+    //protected $table = 'boards';
 
-    public function post() { //再確認
-        return $this->belongsTo('App\Post');
+    public function thread() 
+    {
+        // 掲示板から見てスレッドへは「所属元」なのでbelongTo
+        return $this->belongsTo('App\thread');
     }
 }
