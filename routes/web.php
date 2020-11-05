@@ -37,7 +37,7 @@ Route::group(['prefix'=>'mypages','middleware'=>'auth'],function(){
     Route::get('/{id}/edit','MyPageController@edit')->name('mypages.edit');
     Route::PATCH('/{id}','MyPageController@update')->name('mypages.update');
             });
-
+            
 //掲示板を表示する
 Route::get('/boards', 'BoardsController@index')->name('boards');
 Route::get('/thread', 'ThreadController@index')->name('thread');
