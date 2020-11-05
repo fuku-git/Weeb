@@ -5,6 +5,8 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+
 
 
 class User extends Authenticatable
@@ -45,10 +47,10 @@ class User extends Authenticatable
      */
     protected $primaryKey = 'user_id';
 
-    /**カラム名のカスタマイズを確認中
-    const created_at = 'created_user';
-    const updated_at = 'updated_user';
-     */
+    //カラム名のカスタマイズ
+    const CREATED_AT = 'created_user';
+    const UPDATED_AT = 'updated_user';
+
 }
 
 
