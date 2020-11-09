@@ -15,12 +15,3 @@
 <p>・悩みを相談できるメンターを探す</p> 
 
 <h1 align="center"><i>:three:使い方（動画）</i></h1>
-
-
-
-<h1 align="center"><i>:four:環境</i></h1>
-
-
-
-<h1 align="center"><i>:five:製作者</i></h1>
-
