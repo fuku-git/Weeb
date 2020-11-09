@@ -14,21 +14,13 @@
 <p>・一緒に勉強できる仲間を探す</p>
 <p>・悩みを相談できるメンターを探す</p> 
 
-<h1 align="center"><i>:three:動画</i></h1>
+<h1 align="center"><i>:three:使い方（動画）</i></h1>
 
 
 
-<h1 align="center"><i>:four:使い方</i></h1>
+<h1 align="center"><i>:four:環境</i></h1>
 
 
 
-<h1 align="center"><i>:five:環境</i></h1>
+<h1 align="center"><i>:five:製作者</i></h1>
 
-
-<h1 align="center"><i>:six:インストール方法</i></h1>
-
-
-<h1 align="center"><i>:seven:ライセンス</i></h1>
-
-
-<h1 align="center"><i>:eight:製作者</i></h1>
