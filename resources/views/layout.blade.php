@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Home - Brand</title>
+    <title>Weeeb</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -20,7 +20,7 @@
 <body id="page-top">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">Weeeb</a>
+            <a class="navbar-brand" href="{{ url('/')}}">Weeeb</a>
             <button data-toggle="collapse" data-target="#navbarResponsive"
                 class="navbar-toggler navbar-toggler-right" type="button"
                 data-toogle="collapse" aria-controls="navbarResponsive"
@@ -30,38 +30,42 @@
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav text-uppercase mx-auto">
-                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#connect">connect</a></li>
-                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#how to">How to</a></li>
-                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#boards">EVENT</a></li>
-                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    <li class="nav-item "><a class="nav-link" href="{{ url('/mypage.index')}}">MYPAGE</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="{{ url('/serch')}}">connect</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="{{ url('/')}}">How to</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="{{ url('/')}}">Team</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="{{ url('/boards')}}">EVENT</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger" href="{{ url('/')}}">Contact</a></li>
+                    <li class="nav-item "><a class="nav-link" href="{{ url('/mypages.show')}}">MYPAGE</a></li>
                 </ul>
-                <button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button>
+                <button class="btn btn-primary" type="button" onclick="location.href='./login'"　style="color: rgb(16,15,15);">ログイン</button>
                 <button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button>
             </div>
         </div>
     </nav>
     
-    <header class="masthead" style="background-image: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);">
+    <header class="masthead">
+        {{-- style="background-image: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);"> --}}
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in"></div>
+            {{-- <div class="intro-text"> --}}
+                {{-- <div class="intro-lead-in"></div>
                 <div class="intro-heading text-uppercase" style="font-family: 'Droid Serif';"><span class="text-capitalize" style="font-family: 'Kaushan Script', cursive;color: #060605;">Webエンジニアよ集まれ</span></div>
-                <div class="intro-heading text-uppercase" style="font-family: 'Droid Serif';"><span class="text-capitalize" style="font-family: 'Kaushan Script', cursive;color: #fcd116;font-size: 50px;">Webエンジニア matching サイト</span></div><span style="color: #080808;font-family: 'Kaushan Script', cursive;font-size: 30px;">あなたの最高のパートナーを見つけよう</span>
+                <div class="intro-heading text-uppercase" style="font-family: 'Droid Serif';"><span class="text-capitalize" style="font-family: 'Kaushan Script', cursive;color: #fcd116;font-size: 50px;">Webエンジニア matching サイト</span></div><span style="color: #080808;font-family: 'Kaushan Script', cursive;font-size: 30px;">あなたの最高のパートナーを見つけよう</span> --}}
                 <fieldset>
                     <legend style="text-shadow: 0px 0px;"></legend><span>&nbsp;</span></fieldset>
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);">ユーザー登録</a></div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </header>
 
-    {{-- <main>
+    {{-- <div class="container">
         @yeild('content')
-    </main> --}}
+    </div> --}}
+    
+    <main>
+        @yeild('serch')
+    </main>
 
     {{-- <section id="services">
         <div class="container">
@@ -246,7 +250,7 @@
         </div>
     </section> --}}
     <footer>
-        <div class="container">
+        <div class="container" style="position: absolute; bottom: 0; text-align: center;">
             <div class="row">
                 <div class="col-md-4"><span class="copyright">Copyright&nbsp;© 2020 All Rights Reserved.</span></div>
                 <div class="col-md-4">
