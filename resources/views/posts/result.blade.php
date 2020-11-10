@@ -45,7 +45,7 @@
     </nav>
 
     <header class="masthead text-dark" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
-        <div class="container">
+        <div class="container" style="padding-top: 150px;">
             @foreach ($posts as $post)
             <div class="container my-4">
                 <div class="card mb-4">
