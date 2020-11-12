@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Home - Brand</title>
+    <title>Weeeb</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -98,6 +98,7 @@
         <div class="row">
             <div class="col">
                 <p style="text-align: center;">&nbsp; &nbsp; &nbsp;〜&nbsp;Weeeb 1分で分かる使い方 〜&nbsp;</p>
+                <p style="text-align: center;">&nbsp; &nbsp; &nbsp;(&nbsp;現在作成中です。こちらの動画は私立探求学園で過去作成しました)&nbsp;</p>
                 <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/D-BhMdpCcP8" width="560" height="315" style="margin: auto;display: block;width: 70%;"></iframe>
             </div>
         </div>
