@@ -36,7 +36,7 @@
 
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
-                <div class="intro-text">
+            <div class="intro-text">
                     <div class="intro-lead-in">
                         <span style="color:rgb(14,14,14);font size=12"><big><b>パートナーを見つける</big></b></span>
                     </div>
