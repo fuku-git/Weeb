@@ -175,7 +175,7 @@
                 </h2>
             </div>
             <div style="text-align: center">
-                <img src="/assets/images/ビジネス交流会.jpg" alt="イベント・交流会">
+                <img class="img-fluid" src="{{ asset('/assets/images/ビジネス交流会.jpg') }}" alt="イベント・交流会">
             </div>
         </div>
     </section>
