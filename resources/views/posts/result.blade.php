@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Weeeb</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -45,7 +46,7 @@
     </nav>
 
     <header class="masthead text-dark" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
-        <div class="container">
+        <div class="container" style="padding-top: 150px;">
             @foreach ($posts as $post)
             <div class="container my-4">
                 <div class="card mb-4">
