@@ -47,7 +47,11 @@
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in"><span style="color:rgb(14,14,14);font size=12"><big><b>パートナーを見つける</big></b></span></div>
+
+                <div class="intro-lead-in">
+                    <span style="color:rgb(14,14,14);font size=12"><big><b>パートナーを見つける</big></b></span>
+                </div>
+
                 <div class="row">
                     <div class="col">
                         <fieldset>
@@ -57,32 +61,35 @@
                 </div>
                 <div class="row">
                     <div class="col">
-            <form action="{{ url('/posts.result')}}" method="get">
-                    {{ csrf_field()}}
-                    {{method_field('get')}}
-                <div class="form-group">
-                    <label>名前</label>
-                    <input type="search" class="form-control　text-center col-md-4" 
-                    placeholder="検索したい名前を入力してください" name="search" required>
-                </div>
-                <button type="submit" class="btn btn-primary col-md-2">検索🔍</button>
-            </form>
-            <fieldset>
-                <legend>Field Group</legend>
-            </fieldset>
+                        <form action="{{ url('/posts.result')}}" method="get">
+                                {{ csrf_field()}}
+                                {{method_field('get')}}
+                            <div class="form-group">
+                                <label>名前</label>
+                                <input type="search" class="form-control　text-center col-md-4" 
+                                placeholder="検索したい名前を入力してください" name="search" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary col-md-2">検索🔍</button>
+                        </form>
+                        <fieldset>
+                            <legend>Field Group</legend>
+                        </fieldset>
 
-                <fieldset>
-                    <legend>Fiel</legend>
-                    <div class="row">
-                        <div class="col">
-                            <fieldset>
-                                <legend style="color: rgb(10,9,9);">〜このような出会いがあります〜</legend>
-                            </fieldset>
-                        </div>
+                        <fieldset>
+                            <legend>Fiel</legend>
+                            <div class="row">
+                                <div class="col">
+                                    <fieldset>
+                                        <legend style="color: rgb(10,9,9);">〜このような出会いがあります〜</legend>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                        </fieldset>
                     </div>
-                    <br>
-                    <br>
-                </fieldset>
+                </div>
+
                 <div class="row">
                     <div class="col-lg-4">
                         <h3 class="text-right" style="color: rgb(10,9,9);width: 300px;">パートナーが見つかる</h3>
