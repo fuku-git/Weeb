@@ -4,21 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>Weeeb</title>
+    
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    
+    <!-- fontawesome -->
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    
+@include('layouts.header')
+    {{-- <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">Weeeb</a>
             <button data-toggle="collapse" data-target="#navbarResponsive"
@@ -61,7 +73,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> --}}
 
     <section id="services">
         <div class="container">
@@ -314,6 +326,7 @@
                     </ul>
                 </div>
             </div>
+
         </div>
     </footer>
 
