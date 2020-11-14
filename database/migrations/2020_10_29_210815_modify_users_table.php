@@ -17,8 +17,8 @@ class ModifyUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             //データ型の変更
             $table->string('name',50)->change();
-            $table->string('email',200)->change();
-            $table->string('password',200)->change();
+            $table->string('email',191)->change();
+            $table->string('password',191)->change();
 
             //カラム名の変更
             $table->renameColumn('id', 'user_id');
