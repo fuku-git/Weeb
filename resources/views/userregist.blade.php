@@ -37,113 +37,143 @@
                 </ul><button class="btn btn-primary" type="button" style="color: rgb(16,15,15);">ログイン</button><button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">＊ゲスト</button></div>
         </div>
     </nav>
+
+<!--
+    ***************************************************************
+-->
+
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in"><span style="color: rgb(14,14,14);">新規メンバー登録</span></div>
-                <div class="row">
-                    <div class="col">
-                        <fieldset>
-                            <div class="row">
-                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">ユーザーID<span style="color: rgb(14,14,14);"></span></span>
+                <form method ="POST" action="{{route('store') }}">
+                    @csrf
+                    <div class="intro-lead-in"><span style="color: rgb(14,14,14);">新規メンバー登録</span></div>
+                    <div class="form-group row">
+                        <div class="col-form-label">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <span class="text-center" style="color: rgb(14,14,14);">ユーザーID<span style="color: rgb(14,14,14);"></span></span>
+                                    </div>
+                                    <div class="col-xl-8"><input type="text" name="user_id" id="user_id"style="width: 700px;">
+                                    </div>
                                 </div>
-                                <div class="col-xl-8"><input type="text" style="width: 700px;"></div>
-                            </div>
-                            <legend>　</legend>
-                        </fieldset>
-                    </div>
-                    <div class="col">
-                        <fieldset>
-                            <div class="row">
-                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">ニックネーム<span style="color: rgb(14,14,14);"></span></span>
+                                <legend>　</legend>
+                            </fieldset>
+                        </div>
+                        <div class="col-form-label">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <span class="text-center" style="color: rgb(14,14,14);">ニックネーム<span style="color: rgb(14,14,14);"></span></span>
+                                    </div>
+                                    <div class="col-xl-8"><input type="text" name="user_name" id="user_name" style="width: 700px;">
+                                    </div>
                                 </div>
-                                <div class="col-xl-8"><input type="text" style="width: 700px;"></div>
-                            </div>
-                            <legend>　</legend>
-                        </fieldset>
-                    </div>
-                    <div class="col">
-                        <fieldset>
-                            <div class="row">
-                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">メールアドレス<span style="color: rgb(14,14,14);"></span></span>
+                                <legend>　</legend>
+                            </fieldset>
+                        </div>
+                        <div class="col-form-label">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <span class="text-center" style="color: rgb(14,14,14);">メールアドレス<span style="color: rgb(14,14,14);"></span></span>
+                                    </div>
+                                    <div class="col-xl-8"><input type="email" class="form-control" name="user_email" id="user_email" style="width: 700px;">
+                                    </div>
                                 </div>
-                                <div class="col-xl-8"><input type="email" style="width: 700px;"></div>
-                            </div>
-                            <legend>　</legend>
-                        </fieldset>
-                    </div>
-                    <div class="col">
-                        <fieldset>
-                            <div class="row">
-                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">メールアドレス（確認用）<span style="color: rgb(14,14,14);"></span></span>
+                                <legend>　</legend>
+                            </fieldset>
+                        </div>
+                        <div class="col-form-label">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <span class="text-center" style="color: rgb(14,14,14);">メールアドレス（確認用）<span style="color: rgb(14,14,14);"></span></span>
+                                    </div>
+                                    <div class="col-xl-8"><input type="email" class="form-control" name="user_email2" id="user_email2"style="width: 700px;">
+                                    </div>
                                 </div>
-                                <div class="col-xl-8"><input type="email" style="width: 700px;"></div>
-                            </div>
-                            <legend>　</legend>
-                        </fieldset>
-                    </div>
-                    <div class="col">
-                        <fieldset>
-                            <div class="row">
-                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">パスワード<span style="color: rgb(14,14,14);"></span></span>
+                                <legend>　</legend>
+                            </fieldset>
+                        </div>
+                        <div class="col-form-label">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <span class="text-center" style="color: rgb(14,14,14);">パスワード<span style="color: rgb(14,14,14);"></span></span>
+                                    </div>
+                                    <div class="col-xl-8"><input type="password" name="pass" id="pass" style="width: 700px;">
+                                    </div>
                                 </div>
-                                <div class="col-xl-8"><input type="password" style="width: 700px;"></div>
-                            </div>
-                            <legend>　</legend>
-                        </fieldset>
-                    </div>
-                    <div class="col">
-                        <fieldset>
-                            <div class="row">
-                                <div class="col-xl-4"><span class="text-center" style="color: rgb(14,14,14);">パスワード（確認用）<span style="color: rgb(14,14,14);"></span></span>
+                                <legend>　</legend>
+                            </fieldset>
+                        </div>
+                        <div class="col-form-label">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <span class="text-center" style="color: rgb(14,14,14);">パスワード（確認用）<span style="color: rgb(14,14,14);"></span></span>
+                                    </div>
+                                    <div class="col-xl-8"><input type="password" name="pass2" id="pass2" style="width: 700px;">
+                                    </div>
                                 </div>
-                                <div class="col-xl-8"><input type="password" style="width: 700px;"></div>
-                            </div>
-                            <legend>　</legend>
-                        </fieldset>
+                                <legend>　</legend>
+                            </fieldset>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <fieldset>
-                            <legend>　</legend>
-                        </fieldset>
-                        <fieldset>
-                            <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">ポジション<span style="color: rgb(14,14,14);"></span></span>
-                            </div>
-                            <button class="btn btn-primary" type="button" style="color: rgb(16,15,15); margin-left:120px;">フロントエンド</button>
-                            <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">バックエンド</button>
-                            <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">インフラ</button>
-                            <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">デザイン</button>
-                        </fieldset>
-                        <legend class="text-center"></legend>
-                    </div>
-                </div>
-                <fieldset></fieldset>
-                <fieldset>
-                    <legend></legend>
-                    <div class="row">
-                        <div class="col">
+                    <div class="form-group row">
+                        <div class="col-form-label">
                             <fieldset>
                                 <legend>　</legend>
-                                <div class="row">
-                                    <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">スキル</></span></div>
-                                    <div class="col"><textarea maxlength="1000" placeholder="自分のもつスキルを記載して下さい　例:プログラミング言語" style="height: 300px;width: 700px;"></textarea></div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">ポジション<span style="color: rgb(14,14,14);"></span></span>
                                 </div>
+                                <button class="btn btn-primary" type="button" style="color: rgb(16,15,15); margin-left:120px;">フロントエンド</button>
+                                <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">バックエンド</button>
+                                <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">インフラ</button>
+                                <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">デザイン</button>
                             </fieldset>
                             <legend class="text-center"></legend>
                         </div>
                     </div>
-                    <legend>　</legend>
-                </fieldset>
-                <fieldset>
-                    <div class="col-xl-12 offset-lg-0 offset-xl-1">
-                        <legend class="text-center" style="color: rgb(21,19,19);"></legend>
-                    </div>
-                </fieldset>
-                <fieldset></fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="mypage" style="color: rgb(18,18,18); margin-top:50px;">登録</a></div>
+                    <fieldset></fieldset>
+                    <fieldset>
+                        <legend></legend>
+                        <div class="form-group row">
+                            <div class="col-form-label">
+                                <fieldset>
+                                    <legend>　</legend>
+                                    <div class="row">
+                                        <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">スキル</></span>
+                                        </div>
+                                        <div class="col">
+                                            <textarea name="skill" id="skill" maxlength="1000" placeholder="自分のもつスキルを記載して下さい　例:プログラミング言語" style="height: 300px;width: 700px;"></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <legend class="text-center"></legend>
+                            </div>
+                        </div>
+                        <legend>　</legend>
+                    </fieldset>
+                    <fieldset>
+                        <div class="col-xl-12 offset-lg-0 offset-xl-1">
+                            <legend class="text-center" style="color: rgb(21,19,19);"></legend>
+                        </div>
+                    </fieldset>
+                    <fieldset></fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" style="color: rgb(18,18,18); margin-top:50px;" formaction="{{route('store') }}">登録</a>
+                    <button type="submit" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger"  style="color: rgb(18,18,18); border:none" formaction="{{ route('store') }}">登録2</button>
+                </form>
+            </div>
         </div>
     </header>
+
+    <!--
+        ***************************************************************
+    -->
+
     <footer>
         <div class="container">
             <div class="row">
