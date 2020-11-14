@@ -15,7 +15,7 @@ class CreateThreadTable extends Migration
     {
         Schema::create('thread', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('user_id');
+            $table->string('user_id',50);
             $table->text('post_contents');
             $table->text('post_body');
             $table->text('comment');
