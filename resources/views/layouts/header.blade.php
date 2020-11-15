@@ -17,7 +17,7 @@
               <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#team">team</a></li>
               <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#boards">event</a></li>
               <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#contact">contact</a></li>
-              <li class="nav-item "><a class="nav-link" href="{{ url('/mypages.edit')}}">mypage</a></li>
+              {{-- <li class="nav-item "><a class="nav-link" href="{{ url('/mypages.edit')}}">mypage</a></li> --}}
           </ul>
           <button class="btn btn-primary" type="button" onclick="location.href='./login'"　style="color: rgb(16,15,15);">ログイン</button>
           <button class="btn btn-primary ml-4" type="button" style="background: #fca311;color: rgb(18,18,18);">ゲスト</button>
