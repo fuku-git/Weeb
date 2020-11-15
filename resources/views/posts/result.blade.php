@@ -65,26 +65,8 @@
         </div>
     </header>
     
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2020</span></div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                        <li class="list-inline-item"></li>
-                        <li class="list-inline-item"></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <div class="list-inline-item">Terms of Weeeb</div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    @include('layouts.footer')
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
