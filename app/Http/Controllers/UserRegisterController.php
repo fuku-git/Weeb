@@ -37,6 +37,6 @@ class UserRegisterController extends Controller
 
         User::create($params);
 
-        return redirect()->route('top');
+        return redirect()->route('login');
     }
 }
