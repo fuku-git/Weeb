@@ -36,7 +36,7 @@ Route::get('/mypage', 'MyPageController@index')->name('mypage');
 Route::get('/userregist', 'UserRegisterController@index')->name('userregist');
 
 // マイページを表示する
-Route::group(['prefix'=>'mypages','middleware'=>'auth'],function(){
+Route::group(['prefix'=>'mypages' /*, 'middleware'=>'auth' */ ],function(){
     Route::get('/{id}','MyPageController@show')->name('mypages.show');
     Route::get('/{id}/edit','MyPageController@edit')->name('mypages.edit');
     Route::PATCH('/{id}','MyPageController@update')->name('mypages.update');
