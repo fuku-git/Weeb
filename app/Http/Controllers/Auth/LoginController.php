@@ -36,4 +36,11 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    /* ログイン時のテーブル情報変更用 */
+    public function username()
+    {
+        return 'user_email';
+    }
+
 }
