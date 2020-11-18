@@ -49,25 +49,27 @@
                     @csrf
                     <div class="intro-lead-in"><span style="color: rgb(14,14,14);">新規メンバー登録</span></div>
                     <div class="form-group row">
+                        <!-- ユーザーIDは内部で自動付与される為、不要 -->
                         <div class="col-form-label">
                             <fieldset>
                                 <div class="row">
                                     <div class="col-xl-4">
                                         <span class="text-center" style="color: rgb(14,14,14);">ユーザーID<span style="color: rgb(14,14,14);"></span></span>
                                     </div>
-                                    <div class="col-xl-8"><input type="text" name="user_id" id="user_id"style="width: 700px;">
+                                    <div class="col-xl-8"><input type="text" name="id" id="id"style="width: 700px;">
                                     </div>
                                 </div>
                                 <legend>　</legend>
                             </fieldset>
                         </div>
+                        
                         <div class="col-form-label">
                             <fieldset>
                                 <div class="row">
                                     <div class="col-xl-4">
                                         <span class="text-center" style="color: rgb(14,14,14);">ニックネーム<span style="color: rgb(14,14,14);"></span></span>
                                     </div>
-                                    <div class="col-xl-8"><input type="text" name="user_name" id="user_name" style="width: 700px;">
+                                    <div class="col-xl-8"><input type="text" name="name" id="name" style="width: 700px;">
                                     </div>
                                 </div>
                                 <legend>　</legend>
@@ -79,7 +81,7 @@
                                     <div class="col-xl-4">
                                         <span class="text-center" style="color: rgb(14,14,14);">メールアドレス<span style="color: rgb(14,14,14);"></span></span>
                                     </div>
-                                    <div class="col-xl-8"><input type="email" class="form-control" name="user_email" id="user_email" style="width: 700px;">
+                                    <div class="col-xl-8"><input type="email" class="form-control" name="email" id="email" style="width: 700px;">
                                     </div>
                                 </div>
                                 <legend>　</legend>
@@ -91,7 +93,7 @@
                                     <div class="col-xl-4">
                                         <span class="text-center" style="color: rgb(14,14,14);">メールアドレス（確認用）<span style="color: rgb(14,14,14);"></span></span>
                                     </div>
-                                    <div class="col-xl-8"><input type="email" class="form-control" name="user_email2" id="user_email2"style="width: 700px;">
+                                    <div class="col-xl-8"><input type="email" class="form-control" name="conf_email" id="conf_email"style="width: 700px;">
                                     </div>
                                 </div>
                                 <legend>　</legend>
@@ -103,7 +105,7 @@
                                     <div class="col-xl-4">
                                         <span class="text-center" style="color: rgb(14,14,14);">パスワード<span style="color: rgb(14,14,14);"></span></span>
                                     </div>
-                                    <div class="col-xl-8"><input type="password" name="pass" id="pass" style="width: 700px;">
+                                    <div class="col-xl-8"><input type="password" name="password" id="password" style="width: 700px;">
                                     </div>
                                 </div>
                                 <legend>　</legend>
@@ -115,7 +117,7 @@
                                     <div class="col-xl-4">
                                         <span class="text-center" style="color: rgb(14,14,14);">パスワード（確認用）<span style="color: rgb(14,14,14);"></span></span>
                                     </div>
-                                    <div class="col-xl-8"><input type="password" name="pass2" id="pass2" style="width: 700px;">
+                                    <div class="col-xl-8"><input type="password" name="conf_password" id="conf_password" style="width: 700px;">
                                     </div>
                                 </div>
                                 <legend>　</legend>
@@ -163,8 +165,8 @@
                             <legend class="text-center" style="color: rgb(21,19,19);"></legend>
                         </div>
                     </fieldset>
-                    <fieldset></fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" style="color: rgb(18,18,18); margin-top:50px;" formaction="{{route('store') }}">登録</a>
-                    <button type="submit" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger"  style="color: rgb(18,18,18); border:none" formaction="{{ route('store') }}">登録2</button>
+                    <fieldset></fieldset>
+                    <button type="submit" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger"  style="color: rgb(18,18,18); border:none" formaction="{{ route('store') }}">登録</button>
                 </form>
             </div>
         </div>

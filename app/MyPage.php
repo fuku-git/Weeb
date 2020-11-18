@@ -10,8 +10,8 @@ class MyPage extends Model
     protected $table = 'users';
 
     protected $fillable = [
-        'user_name',
-        'user_email',
+        'name',
+        'email',
         'icon',
         'role',
         'skill',

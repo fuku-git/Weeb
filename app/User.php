@@ -19,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'user_name', 'user_email', 'pass', 'authority', 'role', 'skill'
+        'name', 'email', 'password', 'authority', 'role', 'skill'
     ];
 
     /**
@@ -28,7 +28,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'pass', 'remember_token',
+        'password', 'remember_token',
     ];
 
     /**
@@ -45,11 +45,11 @@ class User extends Authenticatable
      *
      * @var string
      */
-    protected $primaryKey = 'user_id';
+    protected $primaryKey = 'id';
 
     //カラム名のカスタマイズ
-    const CREATED_AT = 'created_user';
-    const UPDATED_AT = 'updated_user';
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'updated_at';
 
 }
 
