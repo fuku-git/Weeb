@@ -21,12 +21,14 @@ class ModifyUsersTable extends Migration
             $table->string('password',191)->change();
 
             //カラム名の変更
+            /* カラム名の変更なし(デフォルトにする)
             $table->renameColumn('id', 'user_id');
             $table->renameColumn('name', 'user_name');
             $table->renameColumn('email', 'user_email');
             $table->renameColumn('password', 'pass');
             $table->renameColumn('created_at', 'created_user');
             $table->renameColumn('updated_at', 'updated_user');
+            */
 
             // カラムの追加
             $table->string('icon')->nullable();
@@ -53,6 +55,8 @@ class ModifyUsersTable extends Migration
             $table->dropColumn('skill');
             $table->dropColumn('portfolio');
 
+            /************************ 注意 **************************/
+            /* ここから先のコードは一度migrate:refreshを行うと次回からエラーが出るので要注意 */
             //データ型を初期値に戻す
             $table->string('user_name')->change();
             $table->string('user_email')->change();

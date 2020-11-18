@@ -21,12 +21,12 @@ class UserRegisterController extends Controller
         //dd($request);
 
         $params = $request->validate([
-            'user_id'=>'required|max:20',
-            'user_name'=>'required|max:191',
-            'user_email'=>'required|max:191',
-            'user_email2'=>'required|max:191',
-            'pass'=>'required|max:191',
-            'pass2'=>'required|max:191',
+            'id'=>'required|max:20',
+            'name'=>'required|max:191',
+            'email'=>'required|max:191',
+            'conf_email'=>'required|max:191',
+            'password'=>'required|max:191',
+            'conf_password'=>'required|max:191',
             'skill'=>'required|max:191'
         ]);
         

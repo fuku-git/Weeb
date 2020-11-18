@@ -63,7 +63,7 @@
                         </div>
                         <div class="row m-2">
                             <div class="col mt-4">
-                                <h2 class="text-left" style="color: rgb(29,31,30);font-family: 'Droid Serif';">{{ $user->user_name }}</h3>
+                                <h2 class="text-left" style="color: rgb(29,31,30);font-family: 'Droid Serif';">{{ $user->name }}</h3>
                             </div>
                         </div>
                         <div class="row m-2">
@@ -112,7 +112,7 @@
 
             <div class="intro-lead-in w-75 mx-auto">
                 <div class="col-md">
-                    <form method ="POST" action="{{ route('mypages.update', ['id' => $user->user_id]) }}">
+                    <form method ="POST" action="{{ route('mypages.update', ['id' => $user->id]) }}">
                         @method('PATCH')
                         @csrf
                         <div class="form-group row">
@@ -120,7 +120,7 @@
                                 <label class="navbar-brand">メールアドレス</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" value="{{ $user->user_email }}" >
+                                <input type="email" class="form-control" value="{{ $user->email }}" name="email" >
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@
                                 <label class="navbar-brand">スキル</label>
                             </div>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" >{{ $user->skill }}</textarea>
+                                <textarea class="form-control" rows="3" name="skill" >{{ $user->skill }}</textarea>
                             </div>
                         </div>
 
@@ -149,13 +149,13 @@
                                 <label class="navbar-brand">ポートフォリオ</label>
                             </div>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="5" >{{ $user->portfolio }}</textarea>
+                                <textarea class="form-control" rows="5" name="portfolio" >{{ $user->portfolio }}</textarea>
                             </div>
                         </div>
 
 
                         <div class="text-center mr-5">
-                            <button type="submit" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger"  style="color: rgb(18,18,18);background: #fca311; border:none" formaction="{{ route('mypages.show', ['id' => $user->user_id]) }}">更新</button>
+                            <button type="submit" class="btn btn-primary  btn-xl text-uppercase js-scroll-trigger"  style="color: rgb(18,18,18);background: #fca311; border:none" formaction="{{ route('mypages.show', ['id' => $user->id]) }}">更新</button>
                         </div>
                     </form>
                 </div>
