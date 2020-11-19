@@ -56,7 +56,8 @@ class ModifyUsersTable extends Migration
             $table->dropColumn('portfolio');
 
             /************************ 注意 **************************/
-            /* ここから先のコードは一度migrate:refreshを行うと次回からエラーが出るので要注意 */
+            /* ここから先のコードは一度migrate:refreshを行うと次回からエラーが出るので要注意
+            デフォルトのカラム名を使用することになったため、下記不要
             //データ型を初期値に戻す
             $table->string('user_name')->change();
             $table->string('user_email')->change();
@@ -69,7 +70,7 @@ class ModifyUsersTable extends Migration
             $table->renameColumn('pass', 'password');
             $table->renameColumn('created_user', 'created_at');
             $table->renameColumn('updated_user', 'updated_at');
-
+            */
         });
     }
 }
