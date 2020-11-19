@@ -49,7 +49,7 @@
                     @csrf
                     <div class="intro-lead-in"><span style="color: rgb(14,14,14);">新規メンバー登録</span></div>
                     <div class="form-group row">
-                        <!-- ユーザーIDは内部で自動付与される為、不要 -->
+                        <!-- ユーザーIDは内部で自動付与される為、不要
                         <div class="col-form-label">
                             <fieldset>
                                 <div class="row">
@@ -62,7 +62,7 @@
                                 <legend>　</legend>
                             </fieldset>
                         </div>
-                        
+                        -->
                         <div class="col-form-label">
                             <fieldset>
                                 <div class="row">
@@ -132,10 +132,12 @@
                             <fieldset>
                                 <div class="col-xl-4 offset-xl-0"><span class="text-center" style="color: rgb(14,14,14);">ポジション<span style="color: rgb(14,14,14);"></span></span>
                                 </div>
-                                <button class="btn btn-primary" type="button" style="color: rgb(16,15,15); margin-left:120px;">フロントエンド</button>
-                                <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">バックエンド</button>
-                                <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">インフラ</button>
-                                <button class="btn btn-primary" type="button" style="color: rgb(18,18,18);">デザイン</button>
+                                <div>
+                                    <input type="radio" name="role" value="1" checked="checked"><span style="color:black;">フロントエンド</span>
+                                    <input type="radio" name="role" value="2" ><span style="color:black;">バックエンド</span>
+                                    <input type="radio" name="role" value="3" ><span style="color:black;">インフラ</span>
+                                    <input type="radio" name="role" value="4" ><span style="color:black;">デザイン</span>
+                                </div>
                             </fieldset>
                             <legend class="text-center"></legend>
                         </div>
