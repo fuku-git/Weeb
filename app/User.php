@@ -47,9 +47,11 @@ class User extends Authenticatable
      */
     protected $primaryKey = 'id';
 
+    /*デフォルトに戻す
     //カラム名のカスタマイズ
-    const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'updated_at';
+    const CREATED_AT = 'created_user';
+    const UPDATED_AT = 'updated_user';
+    */
 
 }
 

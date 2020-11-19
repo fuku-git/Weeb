@@ -79,10 +79,12 @@ class MyPageController extends Controller
     public function update(Request $request, $id)
     {
         $user = MyPage::where('id', $id)->first();
-        $role = CheckUserData::checkRole($user);
-        $form = $request->all();
+        $form = [
+            'skill'=> $request->skill,
+            'portfolio'=> $request->portfolio,
+        ];
         $user->fill($form)->save();
-        return view('mypages.show',compact('user','role'));
+        return redirect()->route('mypages.show',['id' => $user->id]);
     }
 
     /**
