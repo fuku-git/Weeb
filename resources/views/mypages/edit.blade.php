@@ -63,7 +63,7 @@
                         </div>
                         <div class="row m-2">
                             <div class="col mt-4">
-                                <h2 class="text-left" style="color: rgb(29,31,30);font-family: 'Droid Serif';">{{ $user->name }}</h3>
+                                <h2 class="text-left" style="color: rgb(29,31,30);font-family: 'Droid Serif';">{{ $user->name }}</h2>
                             </div>
                         </div>
                         <div class="row m-2">
@@ -112,7 +112,7 @@
 
             <div class="intro-lead-in w-75 mx-auto">
                 <div class="col-md">
-                    <form method ="POST" action="{{ route('mypages.update', ['id' => $user->id]) }}">
+                    <form method ="POST" action="{{ route('mypages.update', $user->id) }}">
                         @method('PATCH')
                         @csrf
                         <div class="form-group row">
@@ -120,7 +120,7 @@
                                 <label class="navbar-brand">メールアドレス</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" value="{{ $user->email }}" name="email" >
+                                <input type="email" class="form-control" value="{{ $user->email }}" name="email" Readonly>
                             </div>
                         </div>
 
