@@ -21,16 +21,25 @@ class UserRegisterController extends Controller
         //dd($request);
 
         $params = $request->validate([
-            'id'=>'required|max:20',
             'name'=>'required|max:191',
             'email'=>'required|max:191',
             'conf_email'=>'required|max:191',
             'password'=>'required|max:191',
             'conf_password'=>'required|max:191',
+            'role'=>'required|max:4',
             'skill'=>'required|max:191'
         ]);
-        
-        $default =["authority" => 2, "role" => 1];
+
+        /* email or password が一致していない場合は新規登録画面に戻る */
+        if($params['email'] != $params['conf_email']){
+            return redirect()->route('userregist');
+        }
+        if($params['password'] != $params['conf_password']){
+            return redirect()->route('userregist');
+        }
+
+        /* 新規登録時はまず常に USER:2 とする(運営:1は別途設定) */
+        $default =["authority" => 2];
         $params = $params + $default;
 
         //dd($params);
