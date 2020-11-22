@@ -50,7 +50,7 @@ class MyPageController extends Controller
     public function show($id)
     {
         //ユーザーページの表示
-        $user = MyPage::where('user_id', $id)->first();
+        $user = MyPage::where('id', $id)->first();
         $role = CheckUserData::checkRole($user);
         return view('mypages.show',compact('user','role'));
     }
@@ -64,7 +64,7 @@ class MyPageController extends Controller
     public function edit($id)
     {
         //
-        $user = MyPage::where('user_id', $id)->first();
+        $user = MyPage::where('id', $id)->first();
         $role = CheckUserData::checkRole($user);
         return view('mypages.edit',compact('user','role'));
     }
@@ -78,12 +78,13 @@ class MyPageController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-        $user = MyPage::where('user_id', $id)->first();
-        $role = CheckUserData::checkRole($user);
-        $form = $request->all();
+        $user = MyPage::where('id', $id)->first();
+        $form = [
+            'skill'=> $request->skill,
+            'portfolio'=> $request->portfolio,
+        ];
         $user->fill($form)->save();
-        return view('mypages.show',compact('user','role'));
+        return redirect()->route('mypages.show',['id' => $user->id]);
     }
 
     /**
