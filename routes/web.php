@@ -40,4 +40,5 @@ Route::group(['prefix'=>'mypages','middleware'=>'auth'],function(){
             
 //掲示板を表示する
 Route::get('/boards', 'BoardsController@index')->name('boards');
+Route::post('/create', 'BoardsController@create')->name('boards');
 Route::get('/thread', 'ThreadController@index')->name('thread');

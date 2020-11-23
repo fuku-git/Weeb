@@ -62,72 +62,68 @@
                     <div class="col">
                         <fieldset>
                             <legend class="text-center" style="color: rgb(14,13,13);background: rgb(254,209,54);text-align: center;">最近の投稿
-                                <div class="btn-group"><button class="btn btn-primary" type="button" style="background: rgb(249,249,247);color: rgb(23,22,22);">並び替え </button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false"
-                                        type="button" style="background: rgb(254,253,251);color: rgb(13,12,12);"></button>
-                                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                                </div>
                             </legend>
                         </fieldset>
-                        <fieldset>
-                        
-                            <div class="row">
-                                <div class="col offset-lg-1" style="display:flex;">
-                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg"></P>
-                                        <div class="thread" style="color: rgb(0,0,0)";>
 
+                        <div class="col-xs-8 col-xs-offset-2" style="color: rgb(0,0,0)";>
+                        @foreach($boards as $board)
+                            <h3>{{ $board->post_contents }}
+                                <small>(投稿日：{{ $board->created_at ->format('Y.m.d') }})</small>
+                            </h3>
+                            <p>投稿者：{{ $board->name }}</p>
+                            <p>投稿内容：{{ nl2br(e(Str::limit($board->post_body, 100))) }}</p>
+                            <a href="{{ url('/thread') }}" style="font-size: 20px; color: rgb(18,18,18);">詳細ページへ</a>
+                            <hr />
+                        @endforeach
+                        </div>
 
-                                        @foreach($boards as $board)
-                                            <dl>
-                                                <dd>投稿日：{{ $board->created_at ->format('Y.m.d') }}</dd>
-                                                <dd>ユーザー：{{ $board->name }}</dd>
-                                                <dd>タイトル：{{ $board->post_contents }}</dd>
-                                                <dd>内容：{{ nl2br(e(Str::limit($board->post_body, 80))) }}</dd>
-                                                    <? if($boards->comments->count() >= 1): //コメント未作成 ?> -->
-                                                        <p><span class="badge badge-primary">コメント：<? $boards->comments->count() ?>件</span></p>
-                                                    <? endif; ?>
-                                            </dl>
-                                        @endforeach
+                        @if(count($boards) < 1)
+                            <h3 style="color: rgb(255,0,0)">現在投稿がありません</h3>
+                        @endif
 
-
-                                        </div>
-                        </fieldset>
                     </div>
                 </div>
-                <fieldset></fieldset>
+                </div>
+
                 <fieldset>
                     <legend class="text-center" style="color: rgb(11,11,11);text-align: left;background: rgb(254,209,54);">新規投稿</legend>
-                    <div class="row text-center">
-                        <div class="col">
-                            <fieldset>
-                                <legend>Field Group</legend>
-                            </fieldset>
 
-            <form method="post" action="{{ url('/creater') }}">
-                @csrf
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3"><span class="text-center" style="color: rgb(14,14,14);">タイトル</span></div>
-                        <div class="col"><input type="text" maxlength="100" placeholder="タイトルを書いてください" style="width: 600px;height: 45px;"></div>
-                    </div>
-                </fieldset>
                 <div class="row">
                     <div class="col">
-                        <fieldset>
-                            <legend>Field Group</legend>
-                            <div class="row">
-                                <div class="col-lg-3"><span class="text-center" style="color: rgb(14,14,14);">投稿内容</></span></div>
-                                <div class="col"><textarea maxlength="1000" placeholder="投稿内容を書いてください" style="height: 300px;width: 600px;"></textarea></div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-                <fieldset>
-                    <legend>Field Group</legend>
-                </fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: left;">投稿</a></div>
+                    
 
-            </form>
+                        @if ($errors->any())
+                            <div class="errors">
+                            <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                            </ul>
+                            </div>
+                        @endif
+
+
+                        <form method="post" action="{{ url('/create') }}">
+                        {{ csrf_field() }}
+
+                        <div class="form-group row" style="color: rgb(14,14,14)";>
+                            <label for="inputPassword" class="col-sm-2 col-form-label">ニックネーム</label>
+                            <div class="col-sm-10">
+                            <input type="text" name="name" class="form-control" placeholder="ニックネームを入力してください">
+                            </div>
+                            <label for="inputPassword" class="col-sm-2 col-form-label">タイトル</label>
+                            <div class="col-sm-10">
+                            <input type="text" name="post_contents" class="form-control" placeholder="タイトルを入力してください">
+                            </div>
+                            <label for="inputPassword" class="col-sm-2 col-form-label">投稿内容</label>
+                            <div class="col-sm-10">
+                            <textarea name="post_body" class="form-control" placeholder="投稿内容を入力してください"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">投稿</button>
+                        </div>
+                        </form>
+                </div>
+                    </div>
 
         </div>
     </header>
