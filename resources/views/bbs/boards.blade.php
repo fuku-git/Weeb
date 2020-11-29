@@ -71,8 +71,13 @@
                                 <small>(投稿日：{{ $board->created_at ->format('Y.m.d') }})</small>
                             </h3>
                             <p>投稿者：{{ $board->name }}</p>
-                            <p>投稿内容：{{ nl2br(e(Str::limit($board->post_body, 100))) }}</p>
-                            <a href="{{ url('/thread') }}" style="font-size: 20px; color: rgb(18,18,18);">詳細ページへ</a>
+                            <p>投稿内容：{{ nl2br(e(Str::limit($board->post_body, 100))) }}</p> 
+                            </p>
+
+                            <a class="card-link" href="{{ action('BoardsController@show', $board->id) }}">
+                                続きを読む
+                            </a>
+                            
                             <hr />
                         @endforeach
                         </div>
