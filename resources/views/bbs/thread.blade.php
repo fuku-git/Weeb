@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
 </head>
 
 <body id="page-top">
@@ -46,60 +46,70 @@
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in"><span style="color: rgb(14,14,14);">スレッド詳細</span></div>
+                <div class="intro-lead-in"><span style="color: rgb(14,14,14);">詳細ページ</span></div>
                 <div class="row">
                     <div class="col">
-                        <fieldset>
-                            <legend>Field Group</legend>
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"><span>Text</span>
-                        <legend style="color: rgb(11,11,11);text-align: center;background: rgb(254,209,54);">タイトル：サーバーサイドについて一緒に学びましょう！</legend>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <fieldset></fieldset>
                         <fieldset>
                             <div class="row">
-                                <div class="col offset-lg-1" style="display:flex;">
-                                    <P><img style="text-align: left; width: 100px;" src="assets/images/インフラ.jpg">
-                                        <div class="thread" style="color: rgb(0,0,0)";>
-                                            <dr>
-                                                <dd>ユーザー：<?php // ?></dd>
-                                                <dd>タイトル：<?php // ?></dd>
-                                                <dd>内容：<?php // ?></dd>
-                                            </dr>
-                                        </div>
-                                    </P>
+                                <div class="col">
+                                    <legend class="text-left" style="color: rgb(14,13,13);background: rgb(254,209,54);text-align: left;"></legend>
                                 </div>
                             </div>
                         </fieldset>
                     </div>
                 </div>
-                <fieldset></fieldset>
-                <fieldset>
-                    <div class="row">
-                        <div class="col">
-                            <fieldset>
-                                <legend style="color: rgb(11,11,11);text-align: center;background: rgb(254,209,54);">返信</legend>
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <fieldset></fieldset><span style="color: rgb(14,13,13);"></span><span class="text-center" style="color: rgb(14,14,14);text-align: justify;">投稿内容<span style="color: rgb(14,14,14);"></span></span>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <fieldset></fieldset><textarea style="width: 600px;height: 300px;"></textarea></div>
-                                </div>
-                            </fieldset>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <legend class="text-center" style="color: rgb(14,13,13);background: rgb(254,209,54);text-align: center;">投稿詳細
+                            </legend>
+                        </fieldset>
+
+                        <div class="col-xs-8 col-xs-offset-2" style="color: rgb(0,0,0)";>
+                        <div class="col-xs-8 col-xs-offset-2" style="color: rgb(0,0,0)";>
+                        
+                            <h3>タイトル：{{ $boards->post_contents }}
+                                <small>(投稿日：{{ $boards->created_at ->format('Y.m.d') }})</small>
+                            </h3>
+                            <p>投稿者：{{ $boards->name }}</p>
+                            <p>投稿内容：{{ $boards->post_body }}</p>
+                            
+                            <hr />
                         </div>
-                        <legend class="text-left"></legend>
-                        <legend class="text-left"></legend>
-                        <legend class="text-left">Field Group</legend>
+
                     </div>
-                </fieldset><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" href="#services" style="color: rgb(18,18,18);text-align: left;">投稿</a></div>
+                </div>
+                </div>
+
+                <fieldset>
+                    <legend class="text-center" style="color: rgb(11,11,11);text-align: left;background: rgb(254,209,54);">コメント投稿</legend>
+
+                <div class="row">
+                    <div class="col">
+                    
+
+                        @if ($errors->any())
+                            <div class="errors">
+                            <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                            </ul>
+                            </div>
+                        @endif
+
+                        <form method="post" action="{{ url('/create') }}">
+                        {{ csrf_field() }}
+                        <div class="form-group row" style="color: rgb(14,14,14)";>
+                            <label for="inputPassword" class="col-sm-2 col-form-label">コメント</label>
+                            <div class="col-sm-10">
+                            <textarea name="post_body" class="form-control" placeholder="コメントを入力してください"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">コメント投稿</button>
+                        </div>
+                        </form>
         </div>
+
     </header>
     <footer>
         <div class="container">
@@ -132,7 +142,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/1-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -156,7 +166,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/2-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -180,7 +190,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/3-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -204,7 +214,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/4-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -228,7 +238,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/5-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -252,7 +262,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/6-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -267,10 +277,10 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
 </body>
 
 </html>
