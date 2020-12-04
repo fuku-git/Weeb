@@ -51,7 +51,7 @@
                     <div class="mt-5">
                         <div class="float-left mx-4">
                             <div class="col px-0 bg-white">
-                                <span class="center-block"><img src="{{ $user->i }}" style="width: 120px;height: 120px;"></span>
+                                <span class="center-block"><img src="{{ $user->icon }}" style="width: 120px;height: 120px;"></span>
                                 <!-- showでは不要のためコメントアウト
                                 <div class="bg-white px-2">
                                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
