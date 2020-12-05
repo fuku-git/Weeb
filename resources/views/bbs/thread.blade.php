@@ -44,7 +44,9 @@
         </div>
     </nav>
     <header class="masthead" style="/*background: url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;), url(&quot;https://publicdomainq.net/images/201706/22s/publicdomainq-0010381tzy.jpg&quot;);*/">
-        <div class="container">
+
+
+    <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in"><span style="color: rgb(14,14,14);">詳細ページ</span></div>
                 <div class="row">
@@ -65,29 +67,21 @@
                             </legend>
                         </fieldset>
 
-                        <div class="col-xs-8 col-xs-offset-2" style="color: rgb(0,0,0)";>
-                        <div class="col-xs-8 col-xs-offset-2" style="color: rgb(0,0,0)";>
-                        
-                            <h3>タイトル：{{ $boards->post_contents }}
-                                <small>(投稿日：{{ $boards->created_at ->format('Y.m.d') }})</small>
-                            </h3>
-                            <p>投稿者：{{ $boards->name }}</p>
-                            <p>投稿内容：{{ $boards->post_body }}</p>
-                            
+                        <div class="text-left col-xs-8 col-xs-offset-2" style="color: rgb(0,0,0)";>
+                            <p>投稿者：{{ $boards->name }} (投稿日：{{ $boards->created_at ->format('Y.m.d') }})</p>
+                            <h5>件名：{{ $boards->post_contents }}</h5>
+                            <h5>投稿内容：{{ $boards->post_body }}</h5>
                             <hr />
                         </div>
 
                     </div>
                 </div>
-                </div>
 
-                <fieldset>
-                    <legend class="text-center" style="color: rgb(11,11,11);text-align: left;background: rgb(254,209,54);">コメント投稿</legend>
+                <legend class="text-center" style="color: rgb(11,11,11);text-align: left;background: rgb(254,209,54);">コメント投稿</legend>
 
                 <div class="row">
                     <div class="col">
                     
-
                         @if ($errors->any())
                             <div class="errors">
                             <ul>
@@ -103,12 +97,20 @@
                         <div class="form-group row" style="color: rgb(14,14,14)";>
                             <label for="inputPassword" class="col-sm-2 col-form-label">コメント</label>
                             <div class="col-sm-10">
-                            <textarea name="post_body" class="form-control" placeholder="コメントを入力してください"></textarea>
+                            <input type="text" name="name" value="{{ old('name') }}" class="form-control" placeholder="コメントを入力してください">
+                            {{ $errors->first('name') }}
                             </div>
-                            <button type="submit" class="btn btn-primary">コメント投稿</button>
+                            <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary">投稿</button>
+                            </div>
                         </div>
                         </form>
+                    </div>
+                </div>
         </div>
+
+
+
 
     </header>
     <footer>
