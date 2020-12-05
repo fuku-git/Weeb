@@ -26,8 +26,8 @@ class BoardsController extends Controller
         
         $validaitor = Validator::make($input, [
             'name' => 'required|string|max:30',
-            'post_contents' => 'required|string|max:30',
-            'post_body' => 'required|string|max:500'
+            'post_contents' => 'required|string|max:50',
+            'post_body' => 'required|string|max:1000'
         ]);
 
         //バリデーション失敗
@@ -42,8 +42,8 @@ class BoardsController extends Controller
         $entry->post_contents = $input["post_contents"];
         $entry->post_body = $input["post_body"];
         $entry->save();
-        return redirect('boards');
-    }
+        return redirect('boards')->with('message', '投稿が完了しました。');
+        }
 
         //投稿の詳細表示
         public function show($id){
