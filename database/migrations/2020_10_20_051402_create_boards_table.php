@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBoardsTable extends Migration //postからboardsに変更
+class CreateBoardsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,10 +15,9 @@ class CreateBoardsTable extends Migration //postからboardsに変更
     {
         Schema::create('boards', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name', 50);
+            $table->string('name');
             $table->text('post_contents');
             $table->text('post_body');
-            // $table->foreign('user_name')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
