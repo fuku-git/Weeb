@@ -13,7 +13,7 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        return view('thread');
+        return view('/bbs.thread');
 
     }
 }

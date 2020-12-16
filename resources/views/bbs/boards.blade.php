@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
 </head>
 
 <body id="page-top">
@@ -65,14 +65,12 @@
                             </legend>
                         </fieldset>
 
-                        <div class="col-xs-8 col-xs-offset-2" style="color: rgb(0,0,0)";>
+                        <div class="text-left col-xs-8 col-xs-offset-2" style="color: rgb(0,0,0)";>
                         @foreach($boards as $board)
-                            <h3>{{ $board->post_contents }}
-                                <small>(投稿日：{{ $board->created_at ->format('Y.m.d') }})</small>
-                            </h3>
-                            <p>投稿者：{{ $board->name }}</p>
-                            <p>投稿内容：{{ nl2br(e(Str::limit($board->post_body, 100))) }}</p>
-                            <a href="{{ url('/thread') }}" style="font-size: 20px; color: rgb(18,18,18);">詳細ページへ</a>
+                            <h5>件名：{{ $board->post_contents }}</h5>
+                            <h5>投稿内容：{{ nl2br(e(Str::limit($board->post_body, 100))) }}</h5>
+                            <p>投稿者：{{ $board->name }} (投稿日：{{ $board->created_at ->format('Y.m.d') }})</p>
+                            <a class="card-link" href="{{ action('BoardsController@show', $board->id) }}">詳細ページへ</a>
                             <hr />
                         @endforeach
                         </div>
@@ -83,15 +81,12 @@
 
                     </div>
                 </div>
-                </div>
 
-                <fieldset>
-                    <legend class="text-center" style="color: rgb(11,11,11);text-align: left;background: rgb(254,209,54);">新規投稿</legend>
+                <legend class="text-center" style="color: rgb(11,11,11);text-align: left;background: rgb(254,209,54);">新規投稿する</legend>
 
                 <div class="row">
                     <div class="col">
                     
-
                         @if ($errors->any())
                             <div class="errors">
                             <ul>
@@ -102,29 +97,32 @@
                             </div>
                         @endif
 
-
                         <form method="post" action="{{ url('/create') }}">
                         {{ csrf_field() }}
-
                         <div class="form-group row" style="color: rgb(14,14,14)";>
                             <label for="inputPassword" class="col-sm-2 col-form-label">ニックネーム</label>
                             <div class="col-sm-10">
-                            <input type="text" name="name" class="form-control" placeholder="ニックネームを入力してください">
+                            <input type="text" name="name" value="{{ old('name') }}" class="form-control" placeholder="ニックネームを入力してください">
+                            {{ $errors->first('name') }}
                             </div>
-                            <label for="inputPassword" class="col-sm-2 col-form-label">タイトル</label>
+                            <label for="inputPassword" class="col-sm-2 col-form-label">件名</label>
                             <div class="col-sm-10">
-                            <input type="text" name="post_contents" class="form-control" placeholder="タイトルを入力してください">
+                            <input type="text" name="post_contents" class="form-control" placeholder="件名を入力してください">
+                            {{ $errors->first('post_contents') }}
                             </div>
                             <label for="inputPassword" class="col-sm-2 col-form-label">投稿内容</label>
                             <div class="col-sm-10">
                             <textarea name="post_body" class="form-control" placeholder="投稿内容を入力してください"></textarea>
+                            {{ $errors->first('post_body') }}
                             </div>
+                            <div class="col-sm-12">
                             <button type="submit" class="btn btn-primary">投稿</button>
+                            </div>
                         </div>
                         </form>
-                </div>
+                        
                     </div>
-
+                </div>
         </div>
     </header>
     <footer>
@@ -158,7 +156,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/1-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -182,7 +180,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/2-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -206,7 +204,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/3-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -230,7 +228,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/4-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -254,7 +252,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/5-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -278,7 +276,7 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6-full.jpg">
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/6-full.jpg">
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
                                         cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-unstyled">
@@ -293,10 +291,10 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
 </body>
 
 </html>
